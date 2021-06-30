@@ -1,0 +1,106 @@
+.card {
+  margin: 50px 20px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-container {
+  background: linear-gradient(45deg, ##F1F1F1 0%, ##CACACA 100%);
+  box-shadow: 0 4px 40px rgba(196, 195, 195, 25%);
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+.card-container:hover {
+  transform: scale(1.06);
+  transition: all 0.3s ease-out;
+  color: var(--primary-dark);
+}
+
+.card-container-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-heading {
+  font-size: 30px;
+  line-height: 38px;
+  color: #222;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #656161;
+  margin-top: 24px;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -65px;
+}
+
+.card-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.card-action-btn {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .card-image {
+    height: 130px;
+  }
+
+  .card-heading {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px;
+  }
+}
+
+/* Testimonial Cards */
+
+.card-quotes-icon > .MuiSvgIcon-root {
+  font-size: 100px;
+  color: #adecfd;
+  opacity: 0.5;
+  transform: rotate(180deg);
+}
+
+.testimonial-card-quote-wrapper {
+  padding: 0 20px 20px 20px;
+  font-size: 25px;
+}
+
+.testimonial-card-client-wrapper {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  color: #fff;
+  font-weight: 900;
+  position: absolute;
+  padding: 20px;
+  width: fit-content;
+}
+
+@media screen and (max-width: 991px) {
+  .testimonial-card-quote-wrapper {
+    font-size: 18px;
+  }
+}
