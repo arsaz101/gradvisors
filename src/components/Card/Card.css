@@ -5,7 +5,7 @@
 }
 
 .card-container {
-  background: linear-gradient(45deg, ##F1F1F1 0%, ##CACACA 100%);
+  background: #fff;
   box-shadow: 0 4px 40px rgba(196, 195, 195, 25%);
   text-decoration: none;
   border-radius: 25px;
@@ -25,17 +25,13 @@
 }
 
 .card-heading {
-  font-size: 30px;
-  line-height: 38px;
-  color: #222;
-  font-weight: 600;
+  color: inherit;
   margin-top: 30px;
 }
 
 .card-description {
-  font-size: 16px;
-  line-height: 24px;
   color: #656161;
+  font-family: 'Avenir-light', sans-serif;
   margin-top: 24px;
 }
 
@@ -67,12 +63,6 @@
   .card-image {
     height: 130px;
   }
-
-  .card-heading {
-    font-size: 24px;
-    line-height: 32px;
-    margin-top: 24px;
-  }
 }
 
 /* Testimonial Cards */
@@ -86,7 +76,6 @@
 
 .testimonial-card-quote-wrapper {
   padding: 0 20px 20px 20px;
-  font-size: 25px;
 }
 
 .testimonial-card-client-wrapper {
@@ -97,10 +86,4 @@
   position: absolute;
   padding: 20px;
   width: fit-content;
-}
-
-@media screen and (max-width: 991px) {
-  .testimonial-card-quote-wrapper {
-    font-size: 18px;
-  }
 }

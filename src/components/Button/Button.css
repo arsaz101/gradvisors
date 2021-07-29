@@ -80,7 +80,7 @@
 }
 
 .primary-btn:hover {
-  background-color: #fff;
-  color: var(--primary);
+  background-color: var(--primary-dark);
+  color: #fff;
   border: none;
 }

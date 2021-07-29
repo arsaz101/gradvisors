@@ -5,37 +5,47 @@ import { formatQuoteIcon } from 'constants/Icons'
 
 type infoCardProps = {
     animationClass?: string
+    animationDuration?: string
     image?: any
     heading?: string
     desc?: string
     backgroundColor?: string
-    showButton?: boolean
+    imageClass?: string
+    buttonText?: string
+    buttonClass?: string
 }
 
 export const InfoCard = ({
     animationClass,
+    animationDuration,
     image,
     heading,
     desc,
     backgroundColor,
-    showButton,
+    imageClass,
+    buttonText,
+    buttonClass,
 }: infoCardProps) => {
     return (
         <div className="card">
             <div className={`card-container ${backgroundColor}`}>
-                <div className="card-container-info" data-aos={animationClass}>
-                    <div className="card-image">
+                <div
+                    className="card-container-info"
+                    data-aos={animationClass}
+                    data-aos-duration={animationDuration}
+                >
+                    <div className={`card-image ${imageClass}`}>
                         <img src={image} alt="" />
                     </div>
-                    <div className="card-heading">{heading}</div>
+                    <h3 className="card-heading">{heading}</h3>
                     <div className="card-description">{desc}</div>
-                    <div className="card-action-btn">
-                        {showButton && (
+                    <div className={`card-action-btn ${buttonClass}`}>
+                        {buttonText && (
                             <Button
                                 buttonSize="btn--wide"
                                 buttonColor="primary-btn"
                             >
-                                Choose Plan
+                                {buttonText}
                             </Button>
                         )}
                     </div>
@@ -46,19 +56,27 @@ export const InfoCard = ({
 }
 
 type testimonialCardProps = {
+    animationClass?: string
+    animationDuration?: string
     quote?: string
     client?: string
     classString?: string
 }
 
 export const TestimonialCard = ({
+    animationClass,
+    animationDuration,
     quote,
     client,
     classString,
 }: testimonialCardProps) => {
     return (
         <div className={`card ${classString}`}>
-            <div className="card-container">
+            <div
+                className="card-container"
+                data-aos={animationClass}
+                data-aos-duration={animationDuration}
+            >
                 <div className="card-quotes-icon">{formatQuoteIcon()}</div>
                 <div className="testimonial-card-quote-wrapper">{quote}</div>
                 <div className="testimonial-card-client-wrapper">{client}</div>

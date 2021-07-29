@@ -8,9 +8,14 @@ import FacebookIcon from '@material-ui/icons/Facebook'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import WhatsAppIcon from '@material-ui/icons/WhatsApp'
 import InstagramIcon from '@material-ui/icons/Instagram'
-import RoomIcon from '@material-ui/icons/Room'
-import PhoneIcon from '@material-ui/icons/Phone'
-import EmailIcon from '@material-ui/icons/Email'
+import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined'
+import PermPhoneMsgOutlinedIcon from '@material-ui/icons/PermPhoneMsgOutlined'
+import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined'
+import CheckOutlinedIcon from '@material-ui/icons/CheckOutlined'
+import VerticalAlignCenterIcon from '@material-ui/icons/VerticalAlignCenter'
+import Diploma from 'images/diploma.svg'
+import Blob from 'images/blob.svg'
+import BlobShadow from 'images/blob-shadow.svg'
 
 export const closeIcon = (styleClass?: string) => (
     <CloseIcon className={styleClass} />
@@ -43,14 +48,34 @@ export const whatsAppIcon = (styleClass?: string) => (
 export const instagramIcon = (styleClass?: string) => (
     <InstagramIcon className={styleClass} />
 )
-export const roomIcon = (styleClass?: string) => (
-    <RoomIcon className={styleClass} />
+export const roomOutlinedIcon = (styleClass?: string) => (
+    <RoomOutlinedIcon className={styleClass} />
 )
 
-export const phoneIcon = (styleClass?: string) => (
-    <PhoneIcon className={styleClass} />
+export const permPhoneMsgOutlinedIcon = (styleClass?: string) => (
+    <PermPhoneMsgOutlinedIcon className={styleClass} />
 )
 
-export const emailIcon = (styleClass?: string) => (
-    <EmailIcon className={styleClass} />
+export const emailOutlinedIcon = (styleClass?: string) => (
+    <EmailOutlinedIcon className={styleClass} />
+)
+
+export const checkOutlinedIcon = (styleClass?: string) => (
+    <CheckOutlinedIcon className={styleClass} />
+)
+
+export const verticalAlignCenterIcon = (styleClass?: string) => (
+    <VerticalAlignCenterIcon className={styleClass} />
+)
+
+export const diplomaVector = (styleClass?: string) => (
+    <img src={Diploma} alt="" className={styleClass} />
+)
+
+export const blobCharacter = (styleClass?: string) => (
+    <img src={Blob} alt="" className={styleClass} />
+)
+
+export const blobShadow = (styleClass?: string) => (
+    <img src={BlobShadow} alt="" className={styleClass} />
 )

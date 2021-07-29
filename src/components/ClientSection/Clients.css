@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #fafafa;
+  background: var(--main-bg);
 }
 
 .clients__wrapper {
@@ -12,6 +12,13 @@
   align-items: center;
   margin: 0 auto;
   max-width: 1300px;
+}
+
+.clients__panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .clients__container {
@@ -34,7 +41,7 @@
   align-items: center;
   justify-content: center;
   padding: 0 30px 80px 30px;
-  flex: 0 0 25%;
+  flex: 0 0 45%;
 }
 
 .clients__container-col > img {
@@ -63,7 +70,7 @@
   }
 
   .clients__container-col {
-    flex: 0 0 50%;
+    flex: 0 0 45%;
     padding: 0 30px 50px 30px;
   }
 }

@@ -9,20 +9,29 @@ import HeroSection from 'components/HeroSection/HeroSection'
 import Testimonial from 'components/TestimonialSection/Testimonial'
 import Footer from 'components/FooterSection/Footer'
 
+import Contact from 'components/ContactSection/Contact'
+import Team from 'components/TeamSection/Team'
 import { homeObjOne, about, testimonials, clients, footer } from './Data'
 import './Home.css'
 
 const Home = () => {
     useEffect(() => {
-        Aos.init({ duration: 800 })
+        Aos.init({})
     }, [])
     return (
         <div className="home__section">
-            <HeroSection {...homeObjOne} />
+            <HeroSection {...homeObjOne} animationDuration="800" />
             <About
                 {...about}
                 animationClass="fade-up"
-                objectAnimationClass="flip-up"
+                objectAnimationClass="zoom-in"
+                animationDuration="1000"
+            />
+            <Team
+                {...about}
+                animationClass="fade-up"
+                objectAnimationClass="zoom-in"
+                animationDuration="1000"
             />
             <Clients
                 {...clients}
@@ -36,7 +45,8 @@ const Home = () => {
                 objectAnimationClass="zoom-out"
                 animationDelay="300"
             />
-            <Footer {...footer} animationClass="fade-up" />
+            <Contact animationClass="fade-up" animationDelay="800" />
+            <Footer {...footer} animationClass="fade-up" animationDelay="800" />
         </div>
     )
 }

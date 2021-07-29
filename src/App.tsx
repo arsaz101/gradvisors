@@ -2,7 +2,7 @@ import Navbar from 'components/Navbar/Navbar'
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import 'styles/normalize.css'
-import 'styles/App.css'
+import 'styles/App.scss'
 import Home from 'components/pages/HomePage/Home'
 
 function App(): JSX.Element {

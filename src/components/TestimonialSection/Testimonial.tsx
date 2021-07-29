@@ -49,19 +49,22 @@ const Testimonial = ({
         <div className="testimonial__section" data-aos={animationClass}>
             <div className="testimonial__wrapper">
                 <div className="testimonial__top-level">
-                    <h1
-                        className="testimonial__heading"
-                        data-aos={objectAnimationClass}
-                    >
-                        We have happy customers who love us.
-                    </h1>
-                    <div
+                    <div className="testimonial__heading-wrapper">
+                        <div className="stage">People we work with.</div>
+                        <h1
+                            className="testimonial__heading"
+                            data-aos={objectAnimationClass}
+                        >
+                            We have happy customers who love us.
+                        </h1>
+                    </div>
+                    {/* <div
                         className="testimonial__heading-img"
                         data-aos={objectAnimationClass}
                         data-aos-delay={animationDelay}
                     >
                         <img src={test1} alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="testimonial__container">

@@ -1,4 +1,4 @@
-import svg1 from 'images/svg-1.svg'
+import plane from 'images/paper-plane.png'
 import about1 from 'images/img1.png'
 import about2 from 'images/img2.png'
 import about3 from 'images/img3.png'
@@ -7,7 +7,6 @@ import client1 from 'images/client1.png'
 import client2 from 'images/client2.png'
 import client3 from 'images/client3.png'
 import client4 from 'images/client4.png'
-import Phone from '@material-ui/icons/Phone'
 
 export const homeObjOne = {
     lightBg: false,
@@ -19,14 +18,14 @@ export const homeObjOne = {
         'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: svg1,
+    img: plane,
     alt: 'Credit Card',
 }
 
 export const about = {
     image1: about1,
     heading1: 'Configure your team in 5 minutes.',
-    desc1: 'You simply go to our website and customize your entire enginereing team. You can select skills and frameworks like React, Node, React Native, Python etc.',
+    desc1: 'Just like magic, we assemble the entire engineering team within 24 hours, so you can start working with them almost immediately.',
     image2: about2,
     heading2: 'We assemble your team within 24 hrs',
     desc2: 'Just like magic, we assemble the entire engineering team within 24 hours, so you can start working with them almost immediately.',
@@ -60,17 +59,7 @@ export const testimonials = {
 }
 
 export const clients = {
-    logos: [
-        client1,
-        client2,
-        client3,
-        client4,
-        client2,
-        client1,
-        client2,
-        client3,
-        client4,
-    ],
+    logos: [client1, client2, client3, client4],
 }
 
 export const footer = {
@@ -100,12 +89,31 @@ export const footer = {
         },
         {
             link: '/',
+            name: 'About',
+        },
+        {
+            link: '/',
+            name: 'FAQ',
+        },
+        {
+            link: '/',
+            name: 'Help',
+        },
+        {
+            link: '/',
             name: 'Terms and Conditions',
         },
+        {
+            link: '/',
+            name: 'Link',
+        },
+        {
+            link: '/',
+            name: 'Customers Portal',
+        },
+        {
+            link: '/',
+            name: 'Status',
+        },
     ],
-    contactInfo: {
-        address: '123 Abc Street, Lahore, Pakistan',
-        phone: '12345678900',
-        email: 'arsal.azam@algotrix.io',
-    },
 }

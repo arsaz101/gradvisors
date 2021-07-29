@@ -2,9 +2,12 @@ import React from 'react'
 import { Button } from 'components/Button/Button'
 import { Link } from 'react-router-dom'
 import './HeroSection.css'
+import { Parallax } from 'react-scroll-parallax'
+import { diplomaVector, blobCharacter, blobShadow } from 'constants/Icons'
 
 type Props = {
     animationClass?: string
+    animationDuration?: string
     lightBg?: boolean
     topLine?: string
     lightText?: boolean
@@ -19,6 +22,7 @@ type Props = {
 
 const HeroSection = ({
     animationClass,
+    animationDuration,
     lightBg,
     topLine,
     lightText,
@@ -34,9 +38,12 @@ const HeroSection = ({
         <div
             className={`
                 ${
-                    lightBg ? 'home__hero-section' : 'home__hero-section darkBg'
+                    lightBg
+                        ? 'home__hero-section'
+                        : 'home__hero-section customBg'
                 }`}
             data-aos={animationClass}
+            data-aos-duration={animationDuration}
         >
             <div className="container">
                 <div
@@ -78,11 +85,17 @@ const HeroSection = ({
                     </div>
                     <div className="col">
                         <div className="home__hero-img-wrapper">
-                            <img
-                                src={img}
-                                alt={alt}
-                                className="home__hero-img"
-                            />
+                            <Parallax y={['-20px', '120px']}>
+                                {diplomaVector(
+                                    'home__hero-img diploma-translation'
+                                )}
+                            </Parallax>
+                        </div>
+                        <div className="home__hero-img-wrapper img-md">
+                            <Parallax y={['140px', '-120px']}>
+                                {blobCharacter()}
+                            </Parallax>
+                            {blobShadow()}
                         </div>
                     </div>
                 </div>
