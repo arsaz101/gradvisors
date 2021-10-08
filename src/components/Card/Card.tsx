@@ -8,7 +8,9 @@ type infoCardProps = {
     animationDuration?: string
     image?: any
     heading?: string
+    cardHeadingClass?: string
     desc?: string
+    descClass?: string
     backgroundColor?: string
     imageClass?: string
     buttonText?: string
@@ -20,9 +22,11 @@ export const InfoCard = ({
     animationDuration,
     image,
     heading,
+    cardHeadingClass = '',
     desc,
-    backgroundColor,
-    imageClass,
+    descClass = '',
+    backgroundColor = '',
+    imageClass = '',
     buttonText,
     buttonClass,
 }: infoCardProps) => {
@@ -37,8 +41,12 @@ export const InfoCard = ({
                     <div className={`card-image ${imageClass}`}>
                         <img src={image} alt="" />
                     </div>
-                    <h3 className="card-heading">{heading}</h3>
-                    <div className="card-description">{desc}</div>
+                    <h3 className={`card-heading ${cardHeadingClass}`}>
+                        {heading}
+                    </h3>
+                    <div className={`card-description ${descClass}`}>
+                        {desc}
+                    </div>
                     <div className={`card-action-btn ${buttonClass}`}>
                         {buttonText && (
                             <Button

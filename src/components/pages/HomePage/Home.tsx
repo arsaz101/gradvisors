@@ -11,7 +11,7 @@ import Footer from 'components/FooterSection/Footer'
 
 import Contact from 'components/ContactSection/Contact'
 import Team from 'components/TeamSection/Team'
-import { homeObjOne, about, testimonials, clients, footer } from './Data'
+import { heroSection, about, team, testimonials, clients, footer } from './Data'
 import './Home.css'
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
     }, [])
     return (
         <div className="home__section">
-            <HeroSection {...homeObjOne} animationDuration="800" />
+            <HeroSection {...heroSection} animationDuration="800" />
             <About
                 {...about}
                 animationClass="fade-up"
@@ -28,7 +28,7 @@ const Home = () => {
                 animationDuration="1000"
             />
             <Team
-                {...about}
+                {...team}
                 animationClass="fade-up"
                 objectAnimationClass="zoom-in"
                 animationDuration="1000"

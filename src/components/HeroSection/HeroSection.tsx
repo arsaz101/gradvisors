@@ -3,16 +3,15 @@ import { Button } from 'components/Button/Button'
 import { Link } from 'react-router-dom'
 import './HeroSection.css'
 import { Parallax } from 'react-scroll-parallax'
-import { diplomaVector, blobCharacter, blobShadow } from 'constants/Icons'
 
 type Props = {
     animationClass?: string
     animationDuration?: string
     lightBg?: boolean
-    topLine?: string
     lightText?: boolean
     lightTextDesc?: boolean
     headline?: string
+    highlight?: string
     description?: string
     buttonLabel?: string
     img?: string
@@ -24,10 +23,10 @@ const HeroSection = ({
     animationClass,
     animationDuration,
     lightBg,
-    topLine,
     lightText,
     lightTextDesc,
     headline,
+    highlight,
     description,
     buttonLabel,
     img,
@@ -38,14 +37,12 @@ const HeroSection = ({
         <div
             className={`
                 ${
-                    lightBg
-                        ? 'home__hero-section'
-                        : 'home__hero-section customBg'
+                    lightBg ? 'home__hero-section' : 'home__hero-section heroBg'
                 }`}
             data-aos={animationClass}
             data-aos-duration={animationDuration}
         >
-            <div className="container">
+            <div className="container hero-pd">
                 <div
                     className="row home__hero-row"
                     style={{
@@ -56,18 +53,21 @@ const HeroSection = ({
                 >
                     <div className="col">
                         <div className="home__hero-text-wrapper">
-                            <div className="top-line">{topLine}</div>
+                            <div className="top-line secondary-gradient" />
                             <h1
                                 className={
                                     lightText ? 'heading' : 'heading dark'
                                 }
                             >
                                 {headline}
+                                <span className="primary-color">
+                                    {highlight}
+                                </span>
                             </h1>
                             <p
                                 className={
                                     lightTextDesc
-                                        ? 'home__hero-subtitle'
+                                        ? 'home__hero-subtitle primary-color'
                                         : 'home__hero-subtitle dark'
                                 }
                             >
@@ -76,7 +76,7 @@ const HeroSection = ({
                             <Link to="/sign-up">
                                 <Button
                                     buttonSize="btn--wide"
-                                    buttonColor="primary"
+                                    buttonColor="secondary-gradient"
                                 >
                                     {buttonLabel}
                                 </Button>
@@ -85,17 +85,7 @@ const HeroSection = ({
                     </div>
                     <div className="col">
                         <div className="home__hero-img-wrapper">
-                            <Parallax y={['-20px', '120px']}>
-                                {diplomaVector(
-                                    'home__hero-img diploma-translation'
-                                )}
-                            </Parallax>
-                        </div>
-                        <div className="home__hero-img-wrapper img-md">
-                            <Parallax y={['140px', '-120px']}>
-                                {blobCharacter()}
-                            </Parallax>
-                            {blobShadow()}
+                            <img src={img} alt={alt} />
                         </div>
                     </div>
                 </div>

@@ -31,7 +31,7 @@ const Footer = ({
     quickLinks,
 }: Props) => {
     return (
-        <div className="footer__section" data-aos={animationClass}>
+        <div className="footer__section dark" data-aos={animationClass}>
             <div className="footer__container-wrapper">
                 <div className="footer__container">
                     {about && (
@@ -230,7 +230,7 @@ const Footer = ({
                     </div>
                 </div>
             </div>
-            <div className="footer__copyright">
+            <div className="footer__copyright primary-gradient">
                 <p>Copyright © 2021 Algotrix. All rights Reserved</p>
             </div>
         </div>

@@ -5,7 +5,7 @@ import {
 } from 'constants/Icons'
 import React from 'react'
 import './Contact.css'
-import uniImg from 'images/uni.png'
+import contactImg from 'images/contact-img.svg'
 
 type Props = {
     animationClass?: string
@@ -23,6 +23,7 @@ const Contact = ({ animationClass, animationDelay }: Props) => {
                         data-aos-delay={animationDelay}
                     >
                         <div className="card-info">
+                            <div className="top-line secondary-gradient" />
                             <div className="stage">Say hello.</div>
                             <h1>Have Questions?</h1>
                             <p>
@@ -31,7 +32,7 @@ const Contact = ({ animationClass, animationDelay }: Props) => {
                             </p>
                         </div>
                         <div className="card-detail-image">
-                            <img alt="" src={uniImg} />
+                            <img alt="" src={contactImg} />
                         </div>
                     </div>
                     <div

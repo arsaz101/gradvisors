@@ -3,6 +3,7 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { dehazeIcon, closeIcon } from 'constants/Icons'
 import { Button } from 'components/Button/Button'
+import logo from 'images/logo.svg'
 
 const Navbar = () => {
     const [click, setClick] = useState(false)
@@ -24,7 +25,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="navbar-container container">
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                    Gradvisors
+                    <img src={logo} alt="logo" />
                 </Link>
                 <div
                     role="presentation"
@@ -49,7 +50,7 @@ const Navbar = () => {
                             className="nav-links"
                             onClick={closeMobileMenu}
                         >
-                            Clients
+                            Services
                         </Link>
                     </li>
                     <li className="nav-item">

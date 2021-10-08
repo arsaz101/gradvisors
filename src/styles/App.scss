@@ -1,7 +1,10 @@
 :root {
   --primary-dark: #00113b;
-  --primary: hsl(244, 92%, 61%);
-  --main-bg: #fafafa;
+  --primary: #28af96;
+  --secondary: #f00946;
+  --secondary-light: #fbad91;
+  --main-bg: #fafffe;
+  --dark-bg: #2e2e2e;
 }
 
 .primary {
@@ -20,7 +23,15 @@
   color: #fff !important;
 }
 
+.primary-color {
+  color: var(--primary);
+}
+
 .primary-dark div {
+  color: #fff !important;
+}
+
+.primary-gradient div {
   color: #fff !important;
 }
 
@@ -45,8 +56,8 @@
 }
 
 .primary-gradient {
-  background: linear-gradient(150deg, var(--primary-dark) 0%, var(--primary) 100%);
-  color: #fff !important;
+  background: linear-gradient(40deg, #bdf5ea 20%, var(--primary) 100%);
+  color: #000 !important;
   border: none !important;
 }
 
@@ -56,12 +67,54 @@
   border: none !important;
 }
 
-.primary-gradient div {
+.primary-gradient:hover div {
+  color: var(--primary) !important;
+}
+
+.secondary {
+  background-color: var(--secondary) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.secondary:hover {
+  background-color: #fff !important;
+  color: var(--secondary) !important;
+  border: none !important;
+}
+
+.secondary div {
   color: #fff !important;
 }
 
-.primary-gradient:hover div {
-  color: var(--primary) !important;
+.secondary-gradient div {
+  color: #fff !important;
+}
+
+.secondary:hover div {
+  color: var(--secondary) !important;
+}
+
+.secondary-gradient {
+  background: linear-gradient(90deg, var(--secondary-light) 0%, var(--secondary) 100%);
+  color: #fff !important;
+  border: none !important;
+}
+
+.secondary-gradient:hover {
+  background-color: #fff !important;
+  color: var(--secondary) !important;
+  border: none !important;
+}
+
+.secondary-gradient:hover div {
+  color: var(--secondary) !important;
+}
+
+.dark {
+  background-color: var(--dark-bg) !important;
+  color: #fff !important;
+  border: none !important;
 }
 
 h1 {

@@ -34,13 +34,13 @@ const Team = ({
     const objectDuration = (Number(animationDuration) / 2).toString()
     const customBackground = 'team__card-bg'
     const customImageClass = 'team__card-image'
-    const customBtnClass = 'team__btn'
     return (
-        <div className="team__section">
+        <div className="team__section team-bg">
             <div className="team__wrapper">
-                <div className="stage">Engineers you can hire.</div>
+                <div className="top-line secondary-gradient" />
+                <div className="stage">Brains behind the operation</div>
                 <h2 className="team__heading" data-aos={animationClass}>
-                    Meet our Team Members
+                    Meet our Team:
                 </h2>
                 <div className="team__container">
                     <div className="team__container-row">
@@ -54,11 +54,11 @@ const Team = ({
                                 data-aos-duration={objectDuration}
                                 image={image1}
                                 heading={heading1}
+                                cardHeadingClass="team-card-name"
                                 desc={desc1}
+                                descClass="team-desc"
                                 backgroundColor={customBackground}
                                 imageClass={customImageClass}
-                                buttonText="Get Started"
-                                buttonClass={customBtnClass}
                             />
                         </div>
                         <div
@@ -71,11 +71,11 @@ const Team = ({
                                 data-aos-duration={objectDuration}
                                 image={image2}
                                 heading={heading2}
+                                cardHeadingClass="team-card-name"
                                 desc={desc2}
+                                descClass="team-desc"
                                 backgroundColor={customBackground}
                                 imageClass={customImageClass}
-                                buttonText="Get Started"
-                                buttonClass={customBtnClass}
                             />
                         </div>
                         <div
@@ -88,11 +88,28 @@ const Team = ({
                                 data-aos-duration={objectDuration}
                                 image={image3}
                                 heading={heading3}
+                                cardHeadingClass="team-card-name"
                                 desc={desc3}
+                                descClass="team-desc"
                                 backgroundColor={customBackground}
                                 imageClass={customImageClass}
-                                buttonText="Get Started"
-                                buttonClass={customBtnClass}
+                            />
+                        </div>
+                        <div
+                            className="team__container-col"
+                            data-aos={animationClass}
+                            data-aos-duration={animationDuration}
+                        >
+                            <Card
+                                animationClass={objectAnimationClass}
+                                data-aos-duration={objectDuration}
+                                image={image3}
+                                heading={heading3}
+                                cardHeadingClass="team-card-name"
+                                desc={desc3}
+                                descClass="team-desc"
+                                backgroundColor={customBackground}
+                                imageClass={customImageClass}
                             />
                         </div>
                     </div>

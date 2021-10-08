@@ -1,40 +1,55 @@
-import plane from 'images/paper-plane.png'
-import about1 from 'images/img1.png'
-import about2 from 'images/img2.png'
-import about3 from 'images/img3.png'
-import about4 from 'images/img4.png'
+import heroImg from 'images/hero-img.svg'
+import about1 from 'images/about1.svg'
+import about2 from 'images/about2.svg'
+import about3 from 'images/about3.svg'
+import about4 from 'images/aero.png'
 import client1 from 'images/client1.png'
 import client2 from 'images/client2.png'
 import client3 from 'images/client3.png'
 import client4 from 'images/client4.png'
 
-export const homeObjOne = {
+export const heroSection = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Exclusive Access',
-    headline: 'Unlimited Transactions with zero fees',
+    headline: 'Increase your chances of going to your dream institution by ',
+    highlight: '70%',
     description:
-        'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
+        'We are a professional development organization, providing tailored academic & career counselling solutions to aspiring students',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: plane,
-    alt: 'Credit Card',
+    img: heroImg,
+    alt: 'Academics',
 }
 
 export const about = {
     image1: about1,
-    heading1: 'Configure your team in 5 minutes.',
-    desc1: 'Just like magic, we assemble the entire engineering team within 24 hours, so you can start working with them almost immediately.',
+    heading1: 'Sign up with us',
+    desc1: 'To get started, fill out our online form. After assessing your academic and professional aspirations, we help you finalize a list of universities and begin working on your applications.',
     image2: about2,
-    heading2: 'We assemble your team within 24 hrs',
-    desc2: 'Just like magic, we assemble the entire engineering team within 24 hours, so you can start working with them almost immediately.',
+    heading2: 'Secure university acceptances',
+    desc2: 'Our exceptional team of experts assists you with filing university applications, enabling you to secure admissions at the world’s leading institutions.',
     image3: about3,
-    heading3: 'Try the team for a no-risk 2 week trial',
-    desc3: 'Pay nothing upfront and try the team for 2 weeks. Pay us only after you are 100% satisfied by the work done in the first 2 weeks.',
-    image4: about4,
-    heading4: 'Our onboarding experts help onboard your team.',
-    desc4: 'We assign a specialist to your team to make sure that every new member is properly set up, gets enough domain knowledge and adapts to the company’s process.',
+    heading3: 'Fly to your dream institution',
+    desc3: 'As part of our end-to-end solution, we guide you through the visa process enabling you to reach your dream institution in an effective manner.',
+    // image4: about4,
+    // heading4: 'Our onboarding experts help onboard your team.',
+    // desc4: 'We assign a specialist to your team to make sure that every new member is properly set up, gets enough domain knowledge and adapts to the company’s process.',
+}
+
+export const team = {
+    image1: about1,
+    heading1: 'Ali Aanish',
+    desc1: 'Ali is the Founder and Chief Executive Officer of Gradvisors. His commendable journey to success is filled with examples of perseverance, commitment, and hard work. He’s well-versed in educational counselling, with hands-on experience in undergraduate and graduate admissions.',
+    image2: about2,
+    heading2: 'Zoraiz Tauqeer',
+    desc2: 'Our exceptional team of experts assists you with filing university applications, enabling you to secure admissions at the world’s leading institutions.',
+    image3: about3,
+    heading3: 'Misha Shahid',
+    desc3: 'As part of our end-to-end solution, we guide you through the visa process enabling you to reach your dream institution in an effective manner.',
+    // image4: about4,
+    // heading4: 'Our onboarding experts help onboard your team.',
+    // desc4: 'We assign a specialist to your team to make sure that every new member is properly set up, gets enough domain knowledge and adapts to the company’s process.',
 }
 
 export const testimonials = {
