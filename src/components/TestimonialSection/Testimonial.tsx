@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { TestimonialCard as Card } from 'components/Card/Card'
 import './Testimonial.css'
-import test1 from 'images/testimonial-heading-1.png'
 
 type Props = {
     animationClass?: string
     objectAnimationClass?: string
     animationDelay?: string
+    heading?: string
+    preHeading?: string
     quotes: {
         client?: string
         quote?: string
@@ -19,6 +20,8 @@ const Testimonial = ({
     animationClass,
     objectAnimationClass,
     animationDelay,
+    heading,
+    preHeading,
     quotes,
 }: Props) => {
     const [active, setActive] = useState(0)
@@ -50,23 +53,16 @@ const Testimonial = ({
             <div className="testimonial__wrapper">
                 <div className="testimonial__top-level">
                     <div className="testimonial__heading-wrapper">
-                        <div className="stage">People we work with.</div>
+                        <div className="top-line secondary-gradient" />
+                        <div className="stage">{preHeading}</div>
                         <h1
                             className="testimonial__heading"
                             data-aos={objectAnimationClass}
                         >
-                            We have happy customers who love us.
+                            {heading}
                         </h1>
                     </div>
-                    {/* <div
-                        className="testimonial__heading-img"
-                        data-aos={objectAnimationClass}
-                        data-aos-delay={animationDelay}
-                    >
-                        <img src={test1} alt="" />
-                    </div> */}
                 </div>
-
                 <div className="testimonial__container">
                     <div className="testimonial__container-row">
                         <div
@@ -85,6 +81,7 @@ const Testimonial = ({
                                 {Object.keys(quotes).map((index) => (
                                     <Card
                                         {...quotes[Number(index)]}
+                                        nameTagClass="secondary-gradient"
                                         classString={`${
                                             active === Number(index)
                                                 ? ' active'

@@ -2,7 +2,6 @@ import { InfoCard as Card } from 'components/Card/Card'
 import { checkOutlinedIcon } from 'constants/Icons'
 import React from 'react'
 import './About.css'
-import aero from 'images/aero.png'
 
 type Props = {
     animationClass?: string
@@ -88,7 +87,7 @@ const About = ({
                     </div>
                 </div>
             </div>
-            <div className="about__section-2 aboutBg2">
+            <div className="about__section aboutBg2">
                 <div className="about__detail">
                     <div className="about__wrapper">
                         <div className="about__container about__sec2">
@@ -99,87 +98,38 @@ const About = ({
                                     data-aos-duration={animationDuration}
                                 >
                                     <h2
-                                        className="about__heading"
+                                        className="about__heading secondary-gradient"
                                         data-aos={animationClass}
                                     >
-                                        You manage the tech. We manage
-                                        everything else.
+                                        You&apos;ll do this process once,
+                                        we&apos;ve done it a thousand times
                                     </h2>
-                                    <p>
-                                        We find, hire and train the top tech
-                                        talent in the world, so you dont have
-                                        to. Your team is all set up and ready
-                                        for you on day 1.
-                                    </p>
-                                    <div className="about__bullets">
-                                        <div className="bullets">
-                                            <h4>Sourcing</h4>
-                                            <ul>
-                                                <li>
-                                                    <span className="bullet-check">
-                                                        {checkOutlinedIcon()}
-                                                    </span>
-                                                    Recruitment
-                                                </li>
-                                                <li>
-                                                    <span className="bullet-check">
-                                                        {checkOutlinedIcon()}
-                                                    </span>
-                                                    Onboarding
-                                                </li>
-                                                <li>
-                                                    <span className="bullet-check">
-                                                        {checkOutlinedIcon()}
-                                                    </span>
-                                                    Reviews
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="bullets">
-                                            <h4>Sourcing</h4>
-                                            <ul>
-                                                <li>
-                                                    <span className="bullet-check">
-                                                        {checkOutlinedIcon()}
-                                                    </span>
-                                                    Recruitment
-                                                </li>
-                                                <li>
-                                                    <span className="bullet-check">
-                                                        {checkOutlinedIcon()}
-                                                    </span>
-                                                    Onboarding
-                                                </li>
-                                                <li>
-                                                    <span className="bullet-check">
-                                                        {checkOutlinedIcon()}
-                                                    </span>
-                                                    Reviews
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="bullets">
-                                            <h4>Sourcing</h4>
-                                            <ul>
-                                                <li>
-                                                    <span className="bullet-check">
-                                                        {checkOutlinedIcon()}
-                                                    </span>
-                                                    Recruitment
-                                                </li>
-                                                <li>
-                                                    <span className="bullet-check">
-                                                        {checkOutlinedIcon()}
-                                                    </span>
-                                                    Onboarding
-                                                </li>
-                                                <li>
-                                                    <span className="bullet-check">
-                                                        {checkOutlinedIcon()}
-                                                    </span>
-                                                    Reviews
-                                                </li>
-                                            </ul>
+                                    <div className="about__card card card-container">
+                                        <span className="heading">
+                                            We assist you with:
+                                        </span>
+                                        <div className="about__bullets">
+                                            <div className="bullets">
+                                                <ul>
+                                                    <li>Recruitment</li>
+                                                    <li>Onboarding</li>
+                                                    <li>Reviews</li>
+                                                </ul>
+                                            </div>
+                                            <div className="bullets">
+                                                <ul>
+                                                    <li>Recruitment</li>
+                                                    <li>Onboarding</li>
+                                                    <li>Reviews</li>
+                                                </ul>
+                                            </div>
+                                            <div className="bullets">
+                                                <ul>
+                                                    <li>Recruitment</li>
+                                                    <li>Onboarding</li>
+                                                    <li>Reviews</li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

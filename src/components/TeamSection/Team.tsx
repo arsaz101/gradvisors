@@ -15,6 +15,9 @@ type Props = {
     image3?: string
     heading3?: string
     desc3?: string
+    image4?: string
+    heading4?: string
+    desc4?: string
 }
 
 const Team = ({
@@ -30,6 +33,9 @@ const Team = ({
     image3,
     heading3,
     desc3,
+    image4,
+    heading4,
+    desc4,
 }: Props) => {
     const objectDuration = (Number(animationDuration) / 2).toString()
     const customBackground = 'team__card-bg'
@@ -103,10 +109,10 @@ const Team = ({
                             <Card
                                 animationClass={objectAnimationClass}
                                 data-aos-duration={objectDuration}
-                                image={image3}
-                                heading={heading3}
+                                image={image4}
+                                heading={heading4}
                                 cardHeadingClass="team-card-name"
-                                desc={desc3}
+                                desc={desc4}
                                 descClass="team-desc"
                                 backgroundColor={customBackground}
                                 imageClass={customImageClass}

@@ -12,20 +12,22 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
   max-width: 1300px;
 }
 
 .testimonial__top-level {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: left;
   margin: auto;
   width: 100%;
   max-width: 1300px;
 }
 
-.testimonial__top-level > * {
+.testimonial__heading-wrapper {
   padding: 0 2vh;
+  width: 100%;
 }
 
 .testimonial__heading {

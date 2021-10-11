@@ -66,6 +66,7 @@ export const InfoCard = ({
 type testimonialCardProps = {
     animationClass?: string
     animationDuration?: string
+    nameTagClass?: string
     quote?: string
     client?: string
     classString?: string
@@ -74,6 +75,7 @@ type testimonialCardProps = {
 export const TestimonialCard = ({
     animationClass,
     animationDuration,
+    nameTagClass = '',
     quote,
     client,
     classString,
@@ -87,7 +89,11 @@ export const TestimonialCard = ({
             >
                 <div className="card-quotes-icon">{formatQuoteIcon()}</div>
                 <div className="testimonial-card-quote-wrapper">{quote}</div>
-                <div className="testimonial-card-client-wrapper">{client}</div>
+                <div
+                    className={`testimonial-card-client-wrapper ${nameTagClass}`}
+                >
+                    {client}
+                </div>
             </div>
         </div>
     )
