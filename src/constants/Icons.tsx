@@ -13,9 +13,7 @@ import PermPhoneMsgOutlinedIcon from '@material-ui/icons/PermPhoneMsgOutlined'
 import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined'
 import CheckOutlinedIcon from '@material-ui/icons/CheckOutlined'
 import VerticalAlignCenterIcon from '@material-ui/icons/VerticalAlignCenter'
-import Diploma from 'images/diploma.svg'
-import Blob from 'images/blob.svg'
-import BlobShadow from 'images/blob-shadow.svg'
+import CircleIcon from '@material-ui/icons/AddCircle'
 
 export const closeIcon = (styleClass?: string) => (
     <CloseIcon className={styleClass} />
@@ -68,14 +66,6 @@ export const verticalAlignCenterIcon = (styleClass?: string) => (
     <VerticalAlignCenterIcon className={styleClass} />
 )
 
-export const diplomaVector = (styleClass?: string) => (
-    <img src={Diploma} alt="" className={styleClass} />
-)
-
-export const blobCharacter = (styleClass?: string) => (
-    <img src={Blob} alt="" className={styleClass} />
-)
-
-export const blobShadow = (styleClass?: string) => (
-    <img src={BlobShadow} alt="" className={styleClass} />
+export const circleIcon = (styleClass?: string) => (
+    <CircleIcon className={styleClass} />
 )

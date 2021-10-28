@@ -2,10 +2,12 @@ import heroImg from 'images/hero-img.svg'
 import about1 from 'images/about1.svg'
 import about2 from 'images/about2.svg'
 import about3 from 'images/about3.svg'
-import client1 from 'images/client1.png'
-import client2 from 'images/client2.png'
-import client3 from 'images/client3.png'
-import client4 from 'images/client4.png'
+import client1 from 'images/client1.svg'
+import client2 from 'images/client2.svg'
+import client3 from 'images/client3.svg'
+import client4 from 'images/client4.svg'
+import client5 from 'images/client5.svg'
+import client6 from 'images/client6.svg'
 import team1 from 'images/team1.png'
 import team2 from 'images/team2.png'
 import team3 from 'images/team3.png'
@@ -35,9 +37,6 @@ export const about = {
     image3: about3,
     heading3: 'Fly to your dream institution',
     desc3: 'As part of our end-to-end solution, we guide you through the visa process enabling you to reach your dream institution in an effective manner.',
-    // image4: about4,
-    // heading4: 'Our onboarding experts help onboard your team.',
-    // desc4: 'We assign a specialist to your team to make sure that every new member is properly set up, gets enough domain knowledge and adapts to the company’s process.',
 }
 
 export const team = {
@@ -59,7 +58,7 @@ export const clients = {
     heading:
         'Our students have received acceptances from universities all over the globe',
     preHeading: 'Our Global Alumni Network',
-    logos: [client1, client2, client3, client4],
+    logos: [client1, client2, client3, client4, client5, client6],
 }
 
 export const testimonials = {

@@ -1,5 +1,5 @@
 import { InfoCard as Card } from 'components/Card/Card'
-import { checkOutlinedIcon } from 'constants/Icons'
+import { circleIcon } from 'constants/Icons'
 import React from 'react'
 import './About.css'
 
@@ -98,7 +98,7 @@ const About = ({
                                     data-aos-duration={animationDuration}
                                 >
                                     <h2
-                                        className="about__heading secondary-gradient"
+                                        className="about__heading transparent-fill secondary-gradient"
                                         data-aos={animationClass}
                                     >
                                         You&apos;ll do this process once,
@@ -111,23 +111,47 @@ const About = ({
                                         <div className="about__bullets">
                                             <div className="bullets">
                                                 <ul>
-                                                    <li>Recruitment</li>
-                                                    <li>Onboarding</li>
-                                                    <li>Reviews</li>
+                                                    <li>
+                                                        {circleIcon()} Career &
+                                                        educational counselling
+                                                    </li>
+                                                    <li>
+                                                        {circleIcon()}{' '}
+                                                        University application
+                                                        processing
+                                                    </li>
+                                                    <li>
+                                                        {circleIcon()}Essays &
+                                                        personal statements
+                                                    </li>
                                                 </ul>
                                             </div>
                                             <div className="bullets">
                                                 <ul>
-                                                    <li>Recruitment</li>
-                                                    <li>Onboarding</li>
-                                                    <li>Reviews</li>
+                                                    <li>
+                                                        {circleIcon()} Drafting
+                                                        CVs & resumes
+                                                    </li>
+                                                    <li>
+                                                        {circleIcon()}Letter of
+                                                        recommendations
+                                                    </li>
+                                                    <li>
+                                                        {circleIcon()} Interview
+                                                        preparation
+                                                    </li>
                                                 </ul>
                                             </div>
                                             <div className="bullets">
                                                 <ul>
-                                                    <li>Recruitment</li>
-                                                    <li>Onboarding</li>
-                                                    <li>Reviews</li>
+                                                    <li>
+                                                        {circleIcon()} Visa
+                                                        application processing
+                                                    </li>
+                                                    <li>
+                                                        {circleIcon()}Developing
+                                                        linkages through alumni
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
