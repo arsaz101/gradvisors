@@ -14,10 +14,14 @@
 }
 
 .aboutBg2 {
-  /* background-image: url("images/about-sec2-bg.svg"); */
+  background-image: url("images/about-sec2-bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: right;
+}
+
+.static-height {
+  height: 998px;
 }
 
 .about-wrapper {

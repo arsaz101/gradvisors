@@ -41,7 +41,7 @@ const Team = ({
     const customBackground = 'team__card-bg'
     const customImageClass = 'team__card-image'
     return (
-        <div className="team__section team-bg">
+        <div className="team__section team-bg static-height">
             <div className="team__wrapper">
                 <div className="top-line secondary-gradient" />
                 <div className="stage">Brains behind the operation</div>

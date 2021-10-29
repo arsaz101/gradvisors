@@ -35,7 +35,7 @@ const About = ({
     const objectDuration = (Number(animationDuration) / 2).toString()
     return (
         <div className="about__section">
-            <div className="about__wrapper aboutBg">
+            <div className="about__wrapper aboutBg static-height">
                 <div className="about__content-section">
                     <div className="top-line secondary-gradient" />
                     <div className="stage">Transparent. Diligent. Agile.</div>
@@ -87,7 +87,7 @@ const About = ({
                     </div>
                 </div>
             </div>
-            <div className="about__section aboutBg2">
+            <div className="about__section aboutBg2 static-height">
                 <div className="about__detail">
                     <div className="about__wrapper">
                         <div className="about__container about__sec2">
