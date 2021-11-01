@@ -2,3 +2,10 @@
   /* overflow-x: hidden; */
   font-family: 'Avenir', sans-serif;
 }
+
+.combinedBg {
+  background-image: url("images/combined-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}

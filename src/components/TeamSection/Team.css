@@ -3,11 +3,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--main-bg);
 }
 
 .team-bg {
-  background-image: url("images/team-bg.svg");
+  /* background-image: url("images/team-bg.svg"); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -40,6 +39,7 @@
 .team__container-col {
   display: flex;
   flex: 0 0 25%;
+  padding-top: 180px;
 }
 
 .team__heading {
@@ -51,6 +51,8 @@
   padding: 10px;
   border-radius: 10px;
   text-align: center;
+  font-size: 26px;
+  margin-top: 0;
   background: linear-gradient(90deg, #f5fcfb 20%, #a1ecdf 100%);
 }
 
@@ -63,11 +65,7 @@
 }
 
 .team__card-bg {
-  /* background: transparent; */
-
-  /* box-shadow: none; */
-
-  /* text-align: center; */
+  height: 380px;
 }
 
 .team__card-bg:hover {
@@ -79,6 +77,16 @@
 
 .team__card-image {
   margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.team__card-container-bg {
+  background: linear-gradient(90deg, #f0faf5 20%, #e0f1ef 100%);
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  margin-top: -260px;
 }
 
 .team__card-bg:hover .team__card-image {

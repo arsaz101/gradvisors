@@ -19,32 +19,34 @@ const Home = () => {
         Aos.init({})
     }, [])
     return (
-        <div className="home__section">
+        <div className="home__section main-bg">
             <HeroSection {...heroSection} animationDuration="800" />
-            <About
-                {...about}
-                animationClass="fade-up"
-                objectAnimationClass="zoom-in"
-                animationDuration="1000"
-            />
-            <Team
-                {...team}
-                animationClass="fade-up"
-                objectAnimationClass="zoom-in"
-                animationDuration="1000"
-            />
-            <Clients
-                {...clients}
-                animationClass="fade-up"
-                objectAnimationClass="zoom-out"
-                delay="500"
-            />
-            <Testimonial
-                {...testimonials}
-                animationClass="fade-up"
-                objectAnimationClass="zoom-out"
-                animationDelay="300"
-            />
+            <div className="combinedBg">
+                <About
+                    {...about}
+                    animationClass="fade-up"
+                    objectAnimationClass="zoom-in"
+                    animationDuration="1000"
+                />
+                <Team
+                    {...team}
+                    animationClass="fade-up"
+                    objectAnimationClass="zoom-in"
+                    animationDuration="1000"
+                />
+                <Clients
+                    {...clients}
+                    animationClass="fade-up"
+                    objectAnimationClass="zoom-out"
+                    delay="500"
+                />
+                <Testimonial
+                    {...testimonials}
+                    animationClass="fade-up"
+                    objectAnimationClass="zoom-out"
+                    animationDelay="300"
+                />
+            </div>
             <Contact animationClass="fade-up" animationDelay="800" />
             <Footer {...footer} animationClass="fade-up" animationDelay="800" />
         </div>

@@ -1,20 +1,18 @@
 .about__section {
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--main-bg);
 }
 
 .aboutBg {
   /* background-image: url("images/about-bg.svg"); */
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-size: contain;
+  background-position: right;
 }
 
 .aboutBg2 {
-  background-image: url("images/about-sec2-bg.svg");
+  /* background-image: url("images/about-sec2-bg.svg"); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -160,6 +158,12 @@
   margin-right: 15px;
   padding-top: 10px;
   color: var(--primary);
+}
+
+@media screen and (max-width: 1200px) {
+  .static-height {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 960px) {

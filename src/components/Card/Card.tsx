@@ -7,12 +7,14 @@ type infoCardProps = {
     animationClass?: string
     animationDuration?: string
     image?: any
+    imageClass?: string
     heading?: string
     cardHeadingClass?: string
+    containerClass?: string
     desc?: string
     descClass?: string
     backgroundColor?: string
-    imageClass?: string
+
     buttonText?: string
     buttonClass?: string
 }
@@ -21,12 +23,13 @@ export const InfoCard = ({
     animationClass,
     animationDuration,
     image,
+    imageClass = '',
     heading,
     cardHeadingClass = '',
+    containerClass = '',
     desc,
     descClass = '',
     backgroundColor = '',
-    imageClass = '',
     buttonText,
     buttonClass,
 }: infoCardProps) => {
@@ -38,12 +41,15 @@ export const InfoCard = ({
                     data-aos={animationClass}
                     data-aos-duration={animationDuration}
                 >
-                    <div className={`card-image ${imageClass}`}>
-                        <img src={image} alt="" />
+                    <div className={containerClass}>
+                        <div className={`card-image ${imageClass}`}>
+                            <img src={image} alt="" />
+                        </div>
+                        <h3 className={`card-heading ${cardHeadingClass}`}>
+                            {heading}
+                        </h3>
                     </div>
-                    <h3 className={`card-heading ${cardHeadingClass}`}>
-                        {heading}
-                    </h3>
+
                     <div className={`card-description ${descClass}`}>
                         {desc}
                     </div>

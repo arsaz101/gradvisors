@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Avenir";
-  src: local("Metropolis-Medium"), url(fonts/Metropolis-Medium.otf) format("truetype");
+  src: local("Poppins-Medium"), url(fonts/Poppins-Medium.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Avenir-light";
-  src: local("Metropolis-Light"), url(fonts/Metropolis-Light.otf) format("truetype");
+  src: local("Poppins-Light"), url(fonts/Poppins-Light.ttf) format("truetype");
 }
 
 * {

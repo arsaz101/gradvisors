@@ -7,6 +7,10 @@
   --dark-bg: #2e2e2e;
 }
 
+.main-bg {
+  background: var(--main-bg) !important;
+}
+
 .primary {
   background-color: var(--primary) !important;
   color: #fff !important;
