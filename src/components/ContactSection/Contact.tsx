@@ -42,15 +42,15 @@ const Contact = ({ animationClass, animationDelay }: Props) => {
                     >
                         <div className="contact__email">
                             {emailOutlinedIcon()}
-                            <span>arsal.azam@algotrix.io</span>
+                            <span>hello@gvisors.com</span>
                         </div>
                         <div className="contact__location">
                             {roomOutlinedIcon()}
-                            <span>We are completely remote</span>
+                            <span>254, 1, Sector G Phase 5 D.H.A, Lahore.</span>
                         </div>
                         <div className="contact__phone">
                             {permPhoneMsgOutlinedIcon()}
-                            <span>+12 3456789</span>
+                            <span>+92 (311) 421 9999</span>
                         </div>
                     </div>
                 </div>

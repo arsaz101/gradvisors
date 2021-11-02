@@ -67,10 +67,10 @@ const Navbar = () => {
                             <Link to="/" className="btn-link">
                                 <Button
                                     buttonStyle="btn--outline"
-                                    buttonColor="primary-btn"
+                                    buttonColor="secondary-gradient"
                                     buttonSize="btn--medium"
                                 >
-                                    Hire
+                                    Sign Up
                                 </Button>
                             </Link>
                         ) : (
@@ -83,7 +83,7 @@ const Navbar = () => {
                                     buttonStyle="btn--outline"
                                     buttonSize="btn--mobile"
                                 >
-                                    Hire
+                                    Sign Up
                                 </Button>
                             </Link>
                         )}
