@@ -12,7 +12,6 @@ type Props = {
     animationClass?: string
     animationDelay?: string
     about?: {
-        desc?: string
         twitter?: string
         facebook?: string
         linkedin?: string
@@ -21,7 +20,7 @@ type Props = {
     quickLinks?: {
         link: string
         name: string
-    }[]
+    }[][]
 }
 
 const Footer = ({
@@ -72,161 +71,28 @@ const Footer = ({
                         </div>
                     )}
                     <div className="footer__links">
-                        {quickLinks && (
-                            <div
-                                className="sec footer__quick-links"
-                                data-aos={animationClass}
-                                data-aos-delay={animationDelay}
-                            >
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    {Object.keys(quickLinks).map(
-                                        (index) =>
-                                            quickLinks[Number(index)] && (
+                        {quickLinks &&
+                            quickLinks.map((links) => (
+                                <div
+                                    className="sec footer__quick-links"
+                                    data-aos={animationClass}
+                                    data-aos-delay={animationDelay}
+                                >
+                                    <ul>
+                                        {links.map((linkElem, index) =>
+                                            !index ? (
+                                                <h4>{linkElem.name}</h4>
+                                            ) : (
                                                 <li>
-                                                    <Link
-                                                        to={
-                                                            quickLinks[
-                                                                Number(index)
-                                                            ]?.link
-                                                        }
-                                                    >
-                                                        {
-                                                            quickLinks[
-                                                                Number(index)
-                                                            ]?.name
-                                                        }
+                                                    <Link to={linkElem.link}>
+                                                        {linkElem.name}
                                                     </Link>
                                                 </li>
                                             )
-                                    )}
-                                </ul>
-                            </div>
-                        )}
-                        {quickLinks && (
-                            <div
-                                className="sec footer__quick-links"
-                                data-aos={animationClass}
-                                data-aos-delay={animationDelay}
-                            >
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    {Object.keys(quickLinks).map(
-                                        (index) =>
-                                            quickLinks[Number(index)] && (
-                                                <li>
-                                                    <Link
-                                                        to={
-                                                            quickLinks[
-                                                                Number(index)
-                                                            ]?.link
-                                                        }
-                                                    >
-                                                        {
-                                                            quickLinks[
-                                                                Number(index)
-                                                            ]?.name
-                                                        }
-                                                    </Link>
-                                                </li>
-                                            )
-                                    )}
-                                </ul>
-                            </div>
-                        )}
-                        {quickLinks && (
-                            <div
-                                className="sec footer__quick-links"
-                                data-aos={animationClass}
-                                data-aos-delay={animationDelay}
-                            >
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    {Object.keys(quickLinks).map(
-                                        (index) =>
-                                            quickLinks[Number(index)] && (
-                                                <li>
-                                                    <Link
-                                                        to={
-                                                            quickLinks[
-                                                                Number(index)
-                                                            ]?.link
-                                                        }
-                                                    >
-                                                        {
-                                                            quickLinks[
-                                                                Number(index)
-                                                            ]?.name
-                                                        }
-                                                    </Link>
-                                                </li>
-                                            )
-                                    )}
-                                </ul>
-                            </div>
-                        )}
-                        {quickLinks && (
-                            <div
-                                className="sec footer__quick-links"
-                                data-aos={animationClass}
-                                data-aos-delay={animationDelay}
-                            >
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    {Object.keys(quickLinks).map(
-                                        (index) =>
-                                            quickLinks[Number(index)] && (
-                                                <li>
-                                                    <Link
-                                                        to={
-                                                            quickLinks[
-                                                                Number(index)
-                                                            ]?.link
-                                                        }
-                                                    >
-                                                        {
-                                                            quickLinks[
-                                                                Number(index)
-                                                            ]?.name
-                                                        }
-                                                    </Link>
-                                                </li>
-                                            )
-                                    )}
-                                </ul>
-                            </div>
-                        )}
-                        {quickLinks && (
-                            <div
-                                className="sec footer__quick-links"
-                                data-aos={animationClass}
-                                data-aos-delay={animationDelay}
-                            >
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    {Object.keys(quickLinks).map(
-                                        (index) =>
-                                            quickLinks[Number(index)] && (
-                                                <li>
-                                                    <Link
-                                                        to={
-                                                            quickLinks[
-                                                                Number(index)
-                                                            ]?.link
-                                                        }
-                                                    >
-                                                        {
-                                                            quickLinks[
-                                                                Number(index)
-                                                            ]?.name
-                                                        }
-                                                    </Link>
-                                                </li>
-                                            )
-                                    )}
-                                </ul>
-                            </div>
-                        )}
+                                        )}
+                                    </ul>
+                                </div>
+                            ))}
                     </div>
                 </div>
             </div>

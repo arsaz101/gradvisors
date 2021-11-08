@@ -86,56 +86,99 @@ export const testimonials = {
 
 export const footer = {
     about: {
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!',
         twitter: '/',
         facebook: '/',
         linkedin: '/',
         instagram: '/',
     },
     quickLinks: [
-        {
-            link: '/',
-            name: 'About',
-        },
-        {
-            link: '/',
-            name: 'FAQ',
-        },
-        {
-            link: '/',
-            name: 'Privacy Policy',
-        },
-        {
-            link: '/',
-            name: 'Help',
-        },
-        {
-            link: '/',
-            name: 'About',
-        },
-        {
-            link: '/',
-            name: 'FAQ',
-        },
-        {
-            link: '/',
-            name: 'Help',
-        },
-        {
-            link: '/',
-            name: 'Terms and Conditions',
-        },
-        {
-            link: '/',
-            name: 'Link',
-        },
-        {
-            link: '/',
-            name: 'Customers Portal',
-        },
-        {
-            link: '/',
-            name: 'Status',
-        },
+        [
+            {
+                link: '',
+                name: 'Resources',
+            },
+            {
+                link: '/',
+                name: 'United States',
+            },
+            {
+                link: '/',
+                name: 'United Kingdom',
+            },
+            {
+                link: '/',
+                name: 'Canada',
+            },
+            {
+                link: '/',
+                name: 'Australia',
+            },
+        ],
+        [
+            {
+                link: '',
+                name: 'Communities',
+            },
+            {
+                link: '/',
+                name: 'LUMS',
+            },
+            {
+                link: '/',
+                name: 'IBA',
+            },
+            {
+                link: '/',
+                name: 'LSE',
+            },
+        ],
+        [
+            {
+                link: '',
+                name: 'Company',
+            },
+            {
+                link: '/',
+                name: 'Disclaimer',
+            },
+            {
+                link: '/',
+                name: 'Terms',
+            },
+            {
+                link: '/',
+                name: 'Jobs',
+            },
+            {
+                link: '/',
+                name: 'Privacy Policy',
+            },
+        ],
+        [
+            {
+                link: '',
+                name: 'Connect with us',
+            },
+            {
+                link: '/',
+                name: 'Facebook',
+            },
+            {
+                link: '/',
+                name: 'Instagram',
+            },
+            {
+                link: '/',
+                name: 'Medium',
+            },
+            {
+                link: '/',
+                name: 'Twitter',
+            },
+            {
+                link: '/',
+                name: 'LinkedIn',
+            },
+        ],
     ],
 }
