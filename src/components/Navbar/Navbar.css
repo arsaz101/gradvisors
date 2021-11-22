@@ -129,10 +129,11 @@
   }
 
   .navbar-logo {
-    position: absolute;
+    display: block;
     top: 0;
     left: 0;
-    transform: translate(25%, 50%);
+    transform: translate(0%, 50%);
+    min-width: 150px;
   }
 
   .menu-icon {

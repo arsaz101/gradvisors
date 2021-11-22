@@ -194,8 +194,17 @@
     flex-direction: column;
   }
 
+  .about__heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
   .about__bullets {
     justify-content: center;
+  }
+
+  .stage {
+    text-align: center;
   }
 }
 

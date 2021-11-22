@@ -46,6 +46,11 @@
   flex: 0 0 50%;
 }
 
+.contact__row > .card-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .card-detail h1 {
   margin: 30px 0;
 }
@@ -78,5 +83,14 @@
   .card-detail {
     display: flex;
     flex-direction: column;
+  }
+
+  .contact__row > .card-info {
+    align-items: center;
+  }
+
+  .contact__row > .card-info > h1 {
+    font-size: 50px;
+    text-align: center;
   }
 }

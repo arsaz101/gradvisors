@@ -78,4 +78,9 @@
     flex: 0 0 45%;
     padding: 0 30px 50px 30px;
   }
+
+  .clients__top-line {
+    font-size: 30px;
+    text-align: center;
+  }
 }
