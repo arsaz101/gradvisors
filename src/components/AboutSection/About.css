@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .aboutBg {
@@ -57,6 +59,10 @@
   flex: 0 0 33.33%;
 }
 
+.about__container-col > .card > .card-container {
+  height: 520px;
+}
+
 .stage {
   position: relative;
   margin-bottom: 24px;
@@ -81,7 +87,7 @@
 }
 
 .about__sec2 {
-  padding: 0 0 80px 50px;
+  padding: 0 0 80px 0;
   overflow-wrap: anywhere;
 }
 
@@ -89,7 +95,8 @@
   display: flex;
   flex-direction: column;
   flex: 0 0 50%;
-  padding: 0 0 0 60px;
+
+  /* padding: 0 0 0 60px; */
 }
 
 .about__container-col-extended h2 {
@@ -184,6 +191,10 @@
 
   .about__container-col {
     flex: 0 0 100%;
+  }
+
+  .about__container-col > .card > .card-container {
+    height: auto;
   }
 
   .about__container-col-extended {

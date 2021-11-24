@@ -93,4 +93,13 @@
     font-size: 50px;
     text-align: center;
   }
+
+  .card-detail-image {
+    margin: 10px;
+  }
+
+  .card-detail > .card-info,
+  .card-detail > .card-detail-image {
+    flex: 0;
+  }
 }
