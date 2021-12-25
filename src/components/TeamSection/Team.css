@@ -1,5 +1,4 @@
 .team__section {
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +50,7 @@
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  font-size: 26px;
+  font-size: 21px;
   margin-top: 0;
   background: linear-gradient(90deg, #f5fcfb 20%, #a1ecdf 100%);
 }
@@ -117,6 +116,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .team__card-bg {

@@ -7,6 +7,7 @@ type Props = {
     animationClass?: string
     objectAnimationClass?: string
     animationDuration?: string
+    delay?: string
     image1?: string
     image2?: string
     image3?: string
@@ -22,6 +23,7 @@ const About = ({
     animationClass,
     objectAnimationClass,
     animationDuration,
+    delay,
     image1,
     image2,
     image3,
@@ -34,8 +36,8 @@ const About = ({
 }: Props) => {
     const objectDuration = (Number(animationDuration) / 2).toString()
     return (
-        <div className="about__section">
-            <div className="about__wrapper aboutBg static-height">
+        <div className="about__section container-sec">
+            <div className="about__wrapper aboutBg">
                 <div className="about__content-section">
                     <div className="top-line secondary-gradient" />
                     <div className="stage">Transparent. Diligent. Agile.</div>
@@ -92,72 +94,103 @@ const About = ({
                     <div className="about__wrapper">
                         <div className="about__container about__sec2">
                             <div className="about__container-row no-wrap">
-                                <div
-                                    className="about__container-col-extended"
-                                    data-aos={animationClass}
-                                    data-aos-duration={animationDuration}
-                                >
+                                <div className="about__container-col-extended">
                                     <h2
-                                        className="about__heading transparent-fill secondary-gradient"
+                                        className="about__heading"
                                         data-aos={animationClass}
+                                        data-aos-duration={animationDuration}
                                     >
                                         You&apos;ll do this process once,
                                         we&apos;ve done it a thousand times
                                     </h2>
-                                    <div className="about__card card card-container">
+                                    <div
+                                        className="about__card card card-container flex-1"
+                                        data-aos={animationClass}
+                                        data-aos-duration={animationDuration}
+                                        data-aos-delay={delay}
+                                    >
                                         <span className="heading">
                                             We assist you with:
                                         </span>
                                         <div className="about__bullets">
                                             <div className="bullets">
-                                                <ul>
+                                                <ol>
                                                     <li>
-                                                        {circleIcon()} Career &
-                                                        educational counselling
+                                                        <span className="primary-color poppinsMedium">
+                                                            01{' '}
+                                                        </span>
+                                                        <div className="inside-line primary" />
+                                                        Career & Educational
+                                                        Counselling
                                                     </li>
                                                     <li>
-                                                        {circleIcon()}{' '}
-                                                        University application
-                                                        processing
+                                                        <span className="primary-color poppinsMedium">
+                                                            02{' '}
+                                                        </span>
+                                                        <div className="inside-line primary" />
+                                                        University Application
+                                                        Processing
                                                     </li>
                                                     <li>
-                                                        {circleIcon()}Essays &
-                                                        personal statements
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className="bullets">
-                                                <ul>
-                                                    <li>
-                                                        {circleIcon()} Drafting
-                                                        CVs & resumes
+                                                        <span className="primary-color poppinsMedium">
+                                                            03{' '}
+                                                        </span>
+                                                        <div className="inside-line primary" />
+                                                        Curating Essays &
+                                                        Personal Statements
                                                     </li>
                                                     <li>
-                                                        {circleIcon()}Letter of
-                                                        recommendations
+                                                        <span className="primary-color poppinsMedium">
+                                                            04
+                                                        </span>
+                                                        <div className="inside-line primary" />
+                                                        Drafting CVs & Resumes
                                                     </li>
                                                     <li>
-                                                        {circleIcon()} Interview
-                                                        preparation
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className="bullets">
-                                                <ul>
-                                                    <li>
-                                                        {circleIcon()} Visa
-                                                        application processing
+                                                        <span className="primary-color poppinsMedium">
+                                                            05
+                                                        </span>
+                                                        <div className="inside-line primary" />
+                                                        Assistance with Letter
+                                                        of Recommendations
                                                     </li>
                                                     <li>
-                                                        {circleIcon()}Developing
-                                                        linkages through alumni
+                                                        <span className="primary-color poppinsMedium">
+                                                            06{' '}
+                                                        </span>
+                                                        <div className="inside-line primary" />
+                                                        Scholarship Applications
                                                     </li>
-                                                </ul>
+                                                    <li>
+                                                        <span className="primary-color poppinsMedium">
+                                                            07{' '}
+                                                        </span>
+                                                        <div className="inside-line primary" />
+                                                        Interview Preparation
+                                                    </li>
+                                                    <li>
+                                                        <span className="primary-color poppinsMedium">
+                                                            08{' '}
+                                                        </span>
+                                                        <div className="inside-line primary" />
+                                                        Visa Application
+                                                        Processing
+                                                    </li>
+                                                    <li>
+                                                        <span className="primary-color poppinsMedium">
+                                                            09{' '}
+                                                        </span>
+                                                        <div className="inside-line primary" />
+                                                        Developing professional
+                                                        linkages through our
+                                                        Alumni Network
+                                                    </li>
+                                                </ol>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="about__container-col-extended" />
+                                <div className="about__container-col-extended flex-2" />
                             </div>
                         </div>
                         {/* <div className="scroll-action">

@@ -36,31 +36,37 @@ const Navbar = () => {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
-                        <Link
-                            to="/"
-                            className="nav-links"
-                            onClick={closeMobileMenu}
-                        >
-                            About
-                        </Link>
+                        <span className="navOverlay">
+                            <Link
+                                to="/"
+                                className="nav-links"
+                                onClick={closeMobileMenu}
+                            >
+                                About
+                            </Link>
+                        </span>
                     </li>
                     <li className="nav-item">
-                        <Link
-                            to="/services"
-                            className="nav-links"
-                            onClick={closeMobileMenu}
-                        >
-                            Services
-                        </Link>
+                        <span className="navOverlay">
+                            <Link
+                                to="/services"
+                                className="nav-links"
+                                onClick={closeMobileMenu}
+                            >
+                                Services
+                            </Link>
+                        </span>
                     </li>
                     <li className="nav-item">
-                        <Link
-                            to="/products"
-                            className="nav-links"
-                            onClick={closeMobileMenu}
-                        >
-                            Testimonials
-                        </Link>
+                        <span className="navOverlay">
+                            <Link
+                                to="/products"
+                                className="nav-links"
+                                onClick={closeMobileMenu}
+                            >
+                                Testimonials
+                            </Link>
+                        </span>
                     </li>
                     <li className="nav-btn">
                         {button ? (

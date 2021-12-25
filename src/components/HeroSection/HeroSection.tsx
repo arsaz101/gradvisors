@@ -7,7 +7,6 @@ import { Parallax } from 'react-scroll-parallax'
 type Props = {
     animationClass?: string
     animationDuration?: string
-    lightBg?: boolean
     lightText?: boolean
     lightTextDesc?: boolean
     headline?: string
@@ -22,7 +21,6 @@ type Props = {
 const HeroSection = ({
     animationClass,
     animationDuration,
-    lightBg,
     lightText,
     lightTextDesc,
     headline,
@@ -35,14 +33,11 @@ const HeroSection = ({
 }: Props) => {
     return (
         <div
-            className={`
-                ${
-                    lightBg ? 'home__hero-section' : 'home__hero-section heroBg'
-                }`}
+            className="home__hero-section"
             data-aos={animationClass}
             data-aos-duration={animationDuration}
         >
-            <div className="container hero-pd">
+            <div className="container-sec hero-pd">
                 <div
                     className="row home__hero-row"
                     style={{

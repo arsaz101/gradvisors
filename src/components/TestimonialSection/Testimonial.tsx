@@ -14,7 +14,7 @@ type Props = {
     }[]
 }
 
-const delay = 2500
+const delay = 8000
 
 const Testimonial = ({
     animationClass,
@@ -50,17 +50,17 @@ const Testimonial = ({
 
     return (
         <div className="testimonial__section" data-aos={animationClass}>
-            <div className="testimonial__wrapper">
+            <div className="testimonial__wrapper container-sec">
                 <div className="testimonial__top-level">
                     <div className="testimonial__heading-wrapper">
                         <div className="top-line secondary-gradient" />
                         <div className="stage">{preHeading}</div>
-                        <h1
+                        <h2
                             className="testimonial__heading"
                             data-aos={objectAnimationClass}
                         >
                             {heading}
-                        </h1>
+                        </h2>
                     </div>
                 </div>
                 <div className="testimonial__container">

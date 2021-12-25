@@ -41,12 +41,12 @@ const Team = ({
     const customBackground = 'team__card-bg'
     const customImageClass = 'team__card-image'
     return (
-        <div className="team__section team-bg static-height">
+        <div className="team__section team-bg container-sec">
             <div className="team__wrapper">
                 <div className="top-line secondary-gradient" />
                 <div className="stage">Brains behind the operation</div>
                 <h2 className="team__heading" data-aos={animationClass}>
-                    Meet our Team:
+                    Meet our Team
                 </h2>
                 <div className="team__container">
                     <div className="team__container-row">

@@ -14,13 +14,12 @@ import team3 from 'images/team3.png'
 import team4 from 'images/team4.png'
 
 export const heroSection = {
-    lightBg: false,
     lightText: true,
     lightTextDesc: true,
     headline: 'Increase your chances of going to your dream institution by ',
     highlight: '70%',
     description:
-        'We are a professional development organization, providing tailored academic & career counselling solutions to aspiring students',
+        'We are a professional development organisation, providing tailored academic & career counselling solutions to aspiring students.',
     buttonLabel: 'Get Started',
     imgStart: '',
     img: heroImg,
@@ -30,7 +29,7 @@ export const heroSection = {
 export const about = {
     image1: about1,
     heading1: 'Sign up with us',
-    desc1: 'To get started, fill out our online form. After assessing your academic and professional aspirations, we help you finalize a list of universities and begin working on your applications.',
+    desc1: 'To get started, fill out our online form. After assessing your academic and professional aspirations, we help you finalise a list of universities and begin working on your applications.',
     image2: about2,
     heading2: 'Secure university acceptances',
     desc2: 'Our exceptional team of experts assists you with filing university applications, enabling you to secure admissions at the world’s leading institutions.',
@@ -42,7 +41,7 @@ export const about = {
 export const team = {
     image1: team1,
     heading1: 'Ali Aanish',
-    desc1: 'Ali is the Founder and Chief Executive Officer of Gradvisors. His commendable journey to success is filled with examples of perseverance, commitment, and hard work. He’s well-versed in educational counselling, with hands-on experience in undergraduate and graduate admissions.',
+    desc1: 'Ali is the Founder and Chief Executive Officer of Gradvisors. His commendable journey to success is filled with examples of perseverance, commitment, and hard work. He’s well-versed in educational counselling, with hands-on experience in undergraduate and postgraduate admissions.',
     image2: team2,
     heading2: 'Zoraiz Tauqeer',
     desc2: 'Zoraiz came up with his first business idea at the age of 13. In the decade that followed, he went on to work with numerous tech startups. After graduating from LUMS, Zoraiz worked as a business consultant for companies in the US and Canada, later forming Gradvisors.',
@@ -66,20 +65,16 @@ export const testimonials = {
     preHeading: 'Students we have assisted',
     quotes: [
         {
-            client: 'Awesome Client, Acme Co',
-            quote: 'We assign a specialist to your team to make sure that every new member is properly set up, gets enough domain knowledge and adapts to the company’s process.',
+            client: 'Fatima Noman Butt (University of Manchester)',
+            quote: 'Believe me when I say this, this is the best service I have gotten. Ali knows his stuff but more importantly, he knows yours. He took the entire hassle out of the admission process. All I had to do was provide Ali with the documents required, he took it from there. From applying to universities to choosing between acceptances and communicating with relevant departments, Ali took care of it all. I didn’t even bother logging into my email. I knew Ali was handling my communications for me. That’s how good he is at his job. Hands down will recommend him to anyone and everyone.',
         },
         {
-            client: 'Awesome Client 2, Acme Co',
-            quote: 'We assign a specialist to your team to make sure that every new member is properly set up, gets enough domain knowledge and adapts to the company’s process.',
+            client: 'Tallal Ahmed Bhatti (Sheffield Hallam University)',
+            quote: 'So it was a few months back, around March 2021, when I first got to know about Gradvisors through Instagram when I had decided to pursue a postgraduate degree. After connecting with Ali and Zoraiz, I felt confident in choosing their services. I was honest to them about my needs and plans, and they figured everything out for me just the way I wanted. I would recommend trusting them with your future plans as they help you through each and every stage and even after you’ve reached the university. I had a great journey with Gradvisors and would definitely recommend Ali and Zoraiz for their amazing services.',
         },
         {
-            client: 'Awesome Client 3, Acme Co',
-            quote: 'We assign a specialist to your team to make sure that every new member is properly set up, gets enough domain knowledge and adapts to the company’s process.',
-        },
-        {
-            client: 'Awesome Client 4, Acme Co',
-            quote: 'We assign a specialist to your team to make sure that every new member is properly set up, gets enough domain knowledge and adapts to the company’s process.',
+            client: 'Faizan Bhagat (University of Exeter)',
+            quote: 'My experience in applying to the UK for my Masters’s program with Gradvisors has been fulfilling. One of my favorite things about their service is that they tailor things according to your requirements after having an in-depth discussion with you to understand exactly what is the best fit for you. I would highly recommend Gradvisors to anyone who would want to apply abroad for Bachelors/Masters.',
         },
     ],
 }

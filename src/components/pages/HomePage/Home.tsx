@@ -19,7 +19,9 @@ const Home = () => {
         Aos.init({})
     }, [])
     return (
-        <div className="home__section main-bg">
+        <div className="home__section">
+            <div className="fillBg main-bg" />
+            <div className="heroBg" />
             <HeroSection {...heroSection} animationDuration="800" />
             <div className="combinedBg">
                 <About
@@ -27,6 +29,7 @@ const Home = () => {
                     animationClass="fade-up"
                     objectAnimationClass="zoom-in"
                     animationDuration="1000"
+                    delay="550"
                 />
                 <Team
                     {...team}
@@ -47,8 +50,9 @@ const Home = () => {
                     animationDelay="300"
                 />
             </div>
-            <Contact animationClass="fade-up" animationDelay="800" />
-            <Footer {...footer} animationClass="fade-up" animationDelay="800" />
+
+            <Contact animationClass="fade-up" animationDelay="200" />
+            <Footer {...footer} animationClass="fade-up" animationDelay="200" />
         </div>
     )
 }

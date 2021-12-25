@@ -6,6 +6,14 @@
 .combinedBg {
   background-image: url("images/combined-bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+  background-size: contain;
+  background-position: center;
+  background-position-y: 652px;
+}
+
+.fillBg {
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  position: fixed;
 }

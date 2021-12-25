@@ -81,7 +81,7 @@
 }
 
 .testimonial-card-client-wrapper {
-  font-weight: 900;
+  /* font-weight: 900; */
   position: absolute;
   padding: 20px;
   width: fit-content;

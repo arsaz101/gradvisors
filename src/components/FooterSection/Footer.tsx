@@ -7,6 +7,7 @@ import {
 } from 'constants/Icons'
 import './Footer.css'
 import { Link } from 'react-router-dom'
+import logoGradvisor from 'images/footerLogo.svg'
 
 type Props = {
     animationClass?: string
@@ -30,9 +31,10 @@ const Footer = ({
     quickLinks,
 }: Props) => {
     return (
-        <div className="footer__section dark" data-aos={animationClass}>
+        <div className="footer__section dark">
             <div className="footer__container-wrapper">
                 <div className="footer__container">
+                    <img src={logoGradvisor} alt="" />
                     {about && (
                         <div
                             className="footer__about-us"

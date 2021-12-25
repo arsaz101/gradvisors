@@ -8,9 +8,9 @@ import FacebookIcon from '@material-ui/icons/Facebook'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import WhatsAppIcon from '@material-ui/icons/WhatsApp'
 import InstagramIcon from '@material-ui/icons/Instagram'
-import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined'
-import PermPhoneMsgOutlinedIcon from '@material-ui/icons/PermPhoneMsgOutlined'
-import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined'
+import RoomOutlinedIcon from 'images/location.svg'
+import PermPhoneMsgOutlinedIcon from 'images/phone.svg'
+import EmailOutlinedIcon from 'images/email.svg'
 import CheckOutlinedIcon from '@material-ui/icons/CheckOutlined'
 import VerticalAlignCenterIcon from '@material-ui/icons/VerticalAlignCenter'
 import CircleIcon from '@material-ui/icons/AddCircle'
@@ -47,15 +47,15 @@ export const instagramIcon = (styleClass?: string) => (
     <InstagramIcon className={styleClass} />
 )
 export const roomOutlinedIcon = (styleClass?: string) => (
-    <RoomOutlinedIcon className={styleClass} />
+    <img src={RoomOutlinedIcon} alt="" className={styleClass} />
 )
 
 export const permPhoneMsgOutlinedIcon = (styleClass?: string) => (
-    <PermPhoneMsgOutlinedIcon className={styleClass} />
+    <img src={PermPhoneMsgOutlinedIcon} alt="" className={styleClass} />
 )
 
 export const emailOutlinedIcon = (styleClass?: string) => (
-    <EmailOutlinedIcon className={styleClass} />
+    <img src={EmailOutlinedIcon} alt="" className={styleClass} />
 )
 
 export const checkOutlinedIcon = (styleClass?: string) => (

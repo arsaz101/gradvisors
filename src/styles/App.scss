@@ -1,10 +1,10 @@
 :root {
   --primary-dark: #00113b;
-  --primary: #28af96;
+  --primary: #19bc9d;
   --secondary: #f00946;
-  --secondary-light: #fbad91;
-  --main-bg: #fafffe;
-  --dark-bg: #2e2e2e;
+  --secondary-light: #f46f3b;
+  --main-bg: #f8fffe;
+  --dark-bg: #2d2d2d;
 }
 
 .main-bg {
@@ -96,7 +96,7 @@
 }
 
 .secondary-gradient {
-  background: linear-gradient(90deg, var(--secondary-light) 0%, var(--secondary) 100%);
+  background: linear-gradient(90deg, var(--secondary-light) 0%, var(--secondary-light) 100%);
   color: #fff !important;
   border: none !important;
 }
@@ -121,24 +121,28 @@
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 62px;
   line-height: 1.16667;
   letter-spacing: 0.5px;
   color: #1c2237;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1.16667;
   letter-spacing: 0.5px;
   color: #1c2237;
+  font-weight: 500;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 35px;
   line-height: 1.16667;
   letter-spacing: 0.5px;
   color: #1c2237;
+  font-weight: 500;
+
 }
 
 h4 {
@@ -146,35 +150,28 @@ h4 {
   line-height: 1.16667;
   letter-spacing: 0.5px;
   color: #1c2237;
+  font-weight: 500;
+
 }
 
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 60px;
-    line-height: 1.16667;
     letter-spacing: 0;
-    color: #1c2237;
   }
 
   h2 {
     font-size: 40px;
-    line-height: 1.16667;
     letter-spacing: 0;
-    color: #1c2237;
   }
 
   h3 {
     font-size: 20px;
-    line-height: 1.16667;
     letter-spacing: 0;
-    color: #1c2237;
   }
 
   h4 {
     font-size: 18px;
-    line-height: 1.16667;
-    letter-spacing: 0.5px;
-    color: #1c2237;
   }
 }
 
