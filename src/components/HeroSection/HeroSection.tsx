@@ -7,6 +7,7 @@ import { Parallax } from 'react-scroll-parallax'
 type Props = {
     animationClass?: string
     animationDuration?: string
+    animationDelay?: string
     lightText?: boolean
     lightTextDesc?: boolean
     headline?: string
@@ -21,6 +22,7 @@ type Props = {
 const HeroSection = ({
     animationClass,
     animationDuration,
+    animationDelay,
     lightText,
     lightTextDesc,
     headline,
@@ -36,6 +38,7 @@ const HeroSection = ({
             className="home__hero-section"
             data-aos={animationClass}
             data-aos-duration={animationDuration}
+            data-aos-delay={animationDelay}
         >
             <div className="container-sec hero-pd">
                 <div
@@ -79,7 +82,7 @@ const HeroSection = ({
                         </div>
                     </div>
                     <div className="col">
-                        <div className="home__hero-img-wrapper">
+                        <div className="home__hero-img-wrapper fadeIn">
                             <img src={img} alt={alt} />
                         </div>
                     </div>

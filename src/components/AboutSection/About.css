@@ -4,6 +4,7 @@
   justify-content: center;
   max-width: 1300px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .aboutBg {
@@ -77,6 +78,34 @@
   margin-bottom: 24px;
 }
 
+.heading-bg {
+  position: absolute;
+  top: 0;
+  border-radius: 25px 25px 50% 50%;
+  width: 100%;
+  left: 0;
+  height: 150px;
+  padding: 10px 50px 10px 20px;
+  opacity: 0.85;
+}
+
+.heading-bg h2 {
+  background-image:
+    linear-gradient(
+      90deg,
+      var(--secondary-light) 0%,
+      var(--secondary) 100%
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: linear-gradient(90deg, var(--secondary-light) 0%, var(--secondary) 100%);
+  font-size: 36px !important;
+}
+
+.spacer {
+  height: 150px;
+}
+
 .transparent-fill {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -103,11 +132,11 @@
 }
 
 .flex-1 {
-  flex: 0 0 70%;
+  flex: 0 0 60%;
 }
 
 .flex-2 {
-  flex: 0 0 30%;
+  flex: 0 0 40%;
 }
 
 .about__container-col-extended h2 {
@@ -160,6 +189,11 @@
 
 .bullets li > span {
   width: 30px;
+  font-size: initial;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: 'Poppins-medium';
 }
 
 /* .bullet-check {
@@ -208,10 +242,9 @@
   }
 
   .about__content-section {
-    margin: 0 30px;
+    margin: 0 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .about__container-col {
@@ -223,7 +256,7 @@
   }
 
   .about__container-col-extended {
-    padding: 0 50px 0 0;
+    padding: 0 0 0 0;
   }
 
   .about__container-row {
@@ -232,15 +265,53 @@
 
   .about__heading {
     font-size: 30px;
-    text-align: center;
   }
 
   .about__bullets {
     justify-content: center;
   }
 
+  .about__bullets > .bullets {
+    margin-right: 0;
+  }
+
   .stage {
-    text-align: center;
+    font-size: 18px;
+  }
+
+  .heading-bg {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .heading-bg h2 {
+    font-size: 21px !important;
+    height: auto;
+  }
+
+  .spacer {
+    height: 110px;
+  }
+
+  .about__card > span {
+    font-size: 20px;
+  }
+
+  .bullets li {
+    font-size: initial;
+    margin: 10px 0;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .bullets li > span {
+    font-family: 'Poppins-light';
+  }
+
+  .inside-line {
+    width: 0;
+    height: 0;
+    margin: 0;
   }
 }
 

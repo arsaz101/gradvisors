@@ -141,8 +141,16 @@
 }
 
 @media screen and (max-width: 960px) {
+  .contact__container.container-sec {
+    padding: 14px;
+  }
+
+  .contact__card {
+    padding: 3rem 3vw;
+  }
+
   .contact__top-info {
-    align-items: center;
+    padding: 8vw 8vw 5px 0;
   }
 
   .card-detail {
@@ -151,32 +159,23 @@
   }
 
   .card-detail p {
-    width: 270px;
-  }
-
-  .contact__row > .card-info {
-    align-items: center;
+    width: 100%;
   }
 
   .contact__row > .card-info > h1 {
     font-size: 50px;
-    text-align: center;
-  }
-
-  .contact__row > .card-info > p {
-    text-align: center;
   }
 
   .contact-detail > div {
     display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
+    flex-direction: row;
   }
 
   .card-detail-image {
-    margin: 10px;
-    padding: 0 90px;
+    margin: 0;
+    padding: 0 0;
+    width: 0;
+    height: 0;
   }
 
   .card-detail > .card-info,

@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  width: 100%;
 
   /* max-width: 1300px; */
 }
@@ -24,6 +25,7 @@
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 .clients__container {
@@ -33,6 +35,7 @@
   align-content: center;
   max-width: 70vw;
   overflow: hidden;
+  margin: auto;
 }
 
 .clients__container-row {
@@ -45,24 +48,22 @@
   transition: ease 1000ms;
 }
 
-/* .client__slideshow {
+.client__slideshow {
   max-width: 100vw;
-} */
+}
 
 .client__slideshow-slider {
-  transition: ease 1000ms;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  white-space: nowrap;
+  transition: ease 2000ms;
 }
 
-.client__slideshow-slider > div {
+.slider-comp {
   display: inline-block;
   white-space: normal;
-  opacity: 1;
+  opacity: 0.4;
 }
 
-.testimonial__slideshow-slider > div.active {
+.slider-comp.active {
   opacity: 1;
 }
 
@@ -71,24 +72,34 @@
   min-width: 100px;
   white-space: normal;
   text-align: center;
-  flex: 0 0 33.33%;
+  display: flex;
+  opacity: 1;
+  flex-wrap: wrap;
 }
 
-.clients__container-col > img {
+.clients__container-col-internal > img {
   height: 25vh;
+}
+
+.clients__container-col-internal {
+  padding: 0 40px 80px 40px;
+  min-width: 100px;
+  white-space: normal;
+  text-align: center;
+  flex: 0 0 33.33%;
 }
 
 .clients__heading {
   color: #1c2237;
   margin-bottom: 24px;
+  width: 65vw;
 }
 
 @media screen and (max-width: 960px) {
   .clients__wrapper {
-    margin: 0 30px;
+    margin: 0 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .clients__container {
@@ -96,6 +107,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    max-width: 100%;
   }
 
   .clients__container-row {
@@ -103,11 +115,12 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 20px;
+    margin: 0;
   }
 
   .client__slideshow {
-    max-width: 100vw;
+    max-width: 100%;
   }
 
   .client__slideshow-slider {
@@ -116,23 +129,32 @@
     display: inline-block;
   }
 
-  .client__slideshow-slider > div {
+  .slider-comp {
     display: inline-block;
     white-space: normal;
     opacity: 1;
   }
 
-  .client__slideshow-slider > div.active {
+  .slider-comp.active {
     opacity: 1;
   }
 
   .clients__container-col {
     flex: 0 0 100%;
-    padding: 0 30px 50px 30px;
+    padding: 0;
+    min-width: 50px;
+  }
+
+  .clients__container-col-internal {
+    flex: 0 0 50%;
+    padding: 10px;
   }
 
   .clients__top-line {
     font-size: 30px;
-    text-align: center;
+  }
+
+  .clients__heading {
+    width: 100%;
   }
 }

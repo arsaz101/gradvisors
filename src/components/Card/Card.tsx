@@ -41,7 +41,7 @@ export const InfoCard = ({
                     data-aos={animationClass}
                     data-aos-duration={animationDuration}
                 >
-                    <div className={containerClass}>
+                    <div className={`w-100 ${containerClass}`}>
                         <div className={`card-image ${imageClass}`}>
                             <img src={image} alt="" />
                         </div>

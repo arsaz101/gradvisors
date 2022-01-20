@@ -113,6 +113,10 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .heroBg {
+    background-image: none;
+  }
+
   .home__hero-text-wrapper {
     padding-bottom: 30px;
   }

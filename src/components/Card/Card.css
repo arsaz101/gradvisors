@@ -5,7 +5,8 @@
 }
 
 .card-container {
-  background: #fff;
+  /* background: #fff; */
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: #a7dad1 5px 5px 6px;
 
   /* box-shadow: 0 4px 40px rgba(196, 195, 195, 25%); */

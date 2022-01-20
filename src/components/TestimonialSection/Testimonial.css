@@ -121,10 +121,6 @@
     align-items: center;
   }
 
-  .testimonial__heading-wrapper {
-    align-items: center;
-  }
-
   .testimonial__top-level {
     display: flex;
     flex-direction: column;
@@ -136,12 +132,15 @@
     padding: 0;
   }
 
-  .testimonial__heading {
-    margin: auto;
-    text-align: center;
-  }
-
   .testimonial__slideshow {
     max-width: 100vw;
+  }
+
+  .testimonial-card-client-wrapper {
+    width: 80%;
+  }
+
+  .testimonial__slideshow-slider > .card > .card-container {
+    /* height: 50vh; */
   }
 }

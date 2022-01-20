@@ -70,7 +70,14 @@ const Navbar = () => {
                     </li>
                     <li className="nav-btn">
                         {button ? (
-                            <Link to="/" className="btn-link">
+                            <Link
+                                to={{
+                                    pathname:
+                                        'https://studyabroad.gvisors.com/website',
+                                }}
+                                target="_blank"
+                                className="btn-link"
+                            >
                                 <Button
                                     buttonStyle="btn--outline"
                                     buttonColor="secondary-gradient"

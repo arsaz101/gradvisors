@@ -11,6 +11,8 @@ import Footer from 'components/FooterSection/Footer'
 
 import Contact from 'components/ContactSection/Contact'
 import Team from 'components/TeamSection/Team'
+import Delayed from 'components/Utils/DelayEffect'
+
 import { heroSection, about, team, testimonials, clients, footer } from './Data'
 import './Home.css'
 
@@ -22,7 +24,11 @@ const Home = () => {
         <div className="home__section">
             <div className="fillBg main-bg" />
             <div className="heroBg" />
-            <HeroSection {...heroSection} animationDuration="800" />
+            <HeroSection
+                {...heroSection}
+                animationDuration="500"
+                animationDelay="100"
+            />
             <div className="combinedBg">
                 <About
                     {...about}
@@ -31,8 +37,10 @@ const Home = () => {
                     animationDuration="1000"
                     delay="550"
                 />
+            </div>
+            <div className="combinedBg2">
                 <Team
-                    {...team}
+                    team={team}
                     animationClass="fade-up"
                     objectAnimationClass="zoom-in"
                     animationDuration="1000"

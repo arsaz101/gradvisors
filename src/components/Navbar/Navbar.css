@@ -102,6 +102,10 @@
 }
 
 @media screen and (max-width: 960px) {
+  .navbar-container {
+    padding-left: 28px !important;
+  }
+
   .nav-menu {
     display: flex;
     flex-direction: column;

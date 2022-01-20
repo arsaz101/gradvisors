@@ -95,20 +95,28 @@ const About = ({
                         <div className="about__container about__sec2">
                             <div className="about__container-row no-wrap">
                                 <div className="about__container-col-extended">
-                                    <h2
-                                        className="about__heading"
-                                        data-aos={animationClass}
-                                        data-aos-duration={animationDuration}
-                                    >
-                                        You&apos;ll do this process once,
-                                        we&apos;ve done it a thousand times
-                                    </h2>
                                     <div
                                         className="about__card card card-container flex-1"
                                         data-aos={animationClass}
                                         data-aos-duration={animationDuration}
                                         data-aos-delay={delay}
                                     >
+                                        <div className="heading-bg">
+                                            <h2
+                                                className="about__heading"
+                                                data-aos={animationClass}
+                                                data-aos-duration={
+                                                    animationDuration
+                                                }
+                                            >
+                                                You&apos;ll do this process
+                                                once,
+                                                <br />
+                                                we&apos;ve done it a thousand
+                                                times.
+                                            </h2>
+                                        </div>
+                                        <div className="spacer" />
                                         <span className="heading">
                                             We assist you with:
                                         </span>
@@ -117,7 +125,7 @@ const About = ({
                                                 <ol>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
-                                                            01{' '}
+                                                            01
                                                         </span>
                                                         <div className="inside-line primary" />
                                                         Career & Educational
@@ -125,7 +133,7 @@ const About = ({
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
-                                                            02{' '}
+                                                            02
                                                         </span>
                                                         <div className="inside-line primary" />
                                                         University Application
@@ -133,7 +141,7 @@ const About = ({
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
-                                                            03{' '}
+                                                            03
                                                         </span>
                                                         <div className="inside-line primary" />
                                                         Curating Essays &
@@ -156,21 +164,21 @@ const About = ({
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
-                                                            06{' '}
+                                                            06
                                                         </span>
                                                         <div className="inside-line primary" />
                                                         Scholarship Applications
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
-                                                            07{' '}
+                                                            07
                                                         </span>
                                                         <div className="inside-line primary" />
                                                         Interview Preparation
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
-                                                            08{' '}
+                                                            08
                                                         </span>
                                                         <div className="inside-line primary" />
                                                         Visa Application
@@ -178,7 +186,7 @@ const About = ({
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
-                                                            09{' '}
+                                                            09
                                                         </span>
                                                         <div className="inside-line primary" />
                                                         Developing professional

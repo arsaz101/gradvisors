@@ -101,6 +101,7 @@ const Testimonial = ({
                                         role="presentation"
                                         data-quote={index}
                                         key={index}
+                                        onClick={() => setActive(Number(index))}
                                     />
                                 ))}
                             </div>

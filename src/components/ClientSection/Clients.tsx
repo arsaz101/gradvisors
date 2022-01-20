@@ -7,10 +7,10 @@ type Props = {
     delay?: string
     heading?: string
     preHeading?: string
-    logos: string[]
+    logos: string[][]
 }
 
-const sliderDelay = 2500
+const sliderDelay = 8000
 
 const Clients = ({
     animationClass,
@@ -21,7 +21,6 @@ const Clients = ({
     logos,
 }: Props) => {
     const [active, setActive] = useState(0)
-    const [sliderLength, setSliderLength] = useState(1)
     const timeoutRef = React.useRef({})
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
@@ -45,7 +44,7 @@ const Clients = ({
         timeoutRef.current = setTimeout(
             () =>
                 setActive((prevIndex) =>
-                    prevIndex === sliderLength - 1 ? 0 : prevIndex + 1
+                    prevIndex === logos?.length - 1 ? 0 : prevIndex + 1
                 ),
             sliderDelay
         )
@@ -54,16 +53,6 @@ const Clients = ({
             resetTimeout()
         }
     }, [active, logos?.length])
-
-    React.useEffect(() => {
-        setSliderLength(
-            windowWidth > 960
-                ? Math.ceil(logos.length / 6)
-                : Math.ceil(logos.length)
-        )
-
-        console.log(sliderLength)
-    })
 
     return (
         <div
@@ -92,29 +81,44 @@ const Clients = ({
                                     }}
                                 >
                                     {Object.keys(logos).map((index) => (
-                                        <div className="clients__container-col">
-                                            <img
-                                                src={logos[Number(index)]}
-                                                alt=""
-                                            />
+                                        <div
+                                            className={`slider-comp ${
+                                                active === Number(index)
+                                                    ? ' active'
+                                                    : ''
+                                            }`}
+                                        >
+                                            <div className="clients__container-col">
+                                                {logos[Number(index)].map(
+                                                    (imgObj, i) => (
+                                                        <div className="clients__container-col-internal">
+                                                            <img
+                                                                src={imgObj}
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                    )
+                                                )}
+                                            </div>
                                         </div>
                                     ))}
                                 </div>
                                 <div className="testimonial__slideshow-slider-indicator">
-                                    {Object.keys(logos)
-                                        .splice(0, sliderLength)
-                                        .map((index) => (
-                                            <span
-                                                className={`testimonial__slideshow-slider-indicator-dots ${
-                                                    active === Number(index)
-                                                        ? ' active'
-                                                        : ''
-                                                }`}
-                                                role="presentation"
-                                                data-quote={index}
-                                                key={index}
-                                            />
-                                        ))}
+                                    {Object.keys(logos).map((index) => (
+                                        <span
+                                            className={`testimonial__slideshow-slider-indicator-dots ${
+                                                active === Number(index)
+                                                    ? ' active'
+                                                    : ''
+                                            }`}
+                                            role="presentation"
+                                            onClick={() =>
+                                                setActive(Number(index))
+                                            }
+                                            data-quote={index}
+                                            key={index}
+                                        />
+                                    ))}
                                 </div>
                             </div>
                         </div>

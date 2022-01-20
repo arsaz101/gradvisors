@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { InfoCard as Card } from 'components/Card/Card'
 import './Team.css'
 
@@ -6,40 +6,59 @@ type Props = {
     animationClass?: string
     objectAnimationClass?: string
     animationDuration?: string
-    image1?: string
-    heading1?: string
-    desc1?: string
-    image2?: string
-    heading2?: string
-    desc2?: string
-    image3?: string
-    heading3?: string
-    desc3?: string
-    image4?: string
-    heading4?: string
-    desc4?: string
+    team: {
+        image?: string
+        heading?: string
+        desc?: string
+    }[]
 }
 
 const Team = ({
     animationClass,
     objectAnimationClass,
     animationDuration,
-    image1,
-    heading1,
-    desc1,
-    image2,
-    heading2,
-    desc2,
-    image3,
-    heading3,
-    desc3,
-    image4,
-    heading4,
-    desc4,
+    team,
 }: Props) => {
     const objectDuration = (Number(animationDuration) / 2).toString()
     const customBackground = 'team__card-bg'
     const customImageClass = 'team__card-image'
+    const delay = 8000
+
+    const [active, setActive] = useState(0)
+    const timeoutRef = React.useRef({})
+    const [mobileView, setMobileView] = useState(0)
+
+    const resetTimeout = () => {
+        if (timeoutRef.current) {
+            clearTimeout(Number(timeoutRef.current))
+        }
+    }
+
+    React.useEffect(() => {
+        resetTimeout()
+        timeoutRef.current = setTimeout(
+            () =>
+                setActive((prevIndex) =>
+                    prevIndex === team?.length - 1 ? 0 : prevIndex + 1
+                ),
+            delay
+        )
+
+        return () => {
+            resetTimeout()
+        }
+    }, [active, team?.length])
+
+    React.useEffect(() => {
+        setMobileView(window.innerWidth < 961 ? 1 : 0)
+        console.log(mobileView)
+    }, [])
+
+    React.useEffect(() => {
+        setMobileView(window.innerWidth < 961 ? 1 : 0)
+        console.log(mobileView)
+    }, [window.innerWidth])
+
     return (
         <div className="team__section team-bg container-sec">
             <div className="team__wrapper">
@@ -51,76 +70,62 @@ const Team = ({
                 <div className="team__container">
                     <div className="team__container-row">
                         <div
-                            className="team__container-col"
-                            data-aos={animationClass}
-                            data-aos-duration={animationDuration}
+                            className="team__slideshow"
+                            data-aos={objectAnimationClass}
                         >
-                            <Card
-                                animationClass={objectAnimationClass}
-                                data-aos-duration={objectDuration}
-                                image={image1}
-                                heading={heading1}
-                                cardHeadingClass="team-card-name"
-                                containerClass="team__card-container-bg"
-                                desc={desc1}
-                                descClass="team-desc"
-                                backgroundColor={customBackground}
-                                imageClass={customImageClass}
-                            />
-                        </div>
-                        <div
-                            className="team__container-col"
-                            data-aos={animationClass}
-                            data-aos-duration={animationDuration}
-                        >
-                            <Card
-                                animationClass={objectAnimationClass}
-                                data-aos-duration={objectDuration}
-                                image={image2}
-                                heading={heading2}
-                                cardHeadingClass="team-card-name"
-                                containerClass="team__card-container-bg"
-                                desc={desc2}
-                                descClass="team-desc"
-                                backgroundColor={customBackground}
-                                imageClass={customImageClass}
-                            />
-                        </div>
-                        <div
-                            className="team__container-col"
-                            data-aos={animationClass}
-                            data-aos-duration={animationDuration}
-                        >
-                            <Card
-                                animationClass={objectAnimationClass}
-                                data-aos-duration={objectDuration}
-                                image={image3}
-                                heading={heading3}
-                                cardHeadingClass="team-card-name"
-                                containerClass="team__card-container-bg"
-                                desc={desc3}
-                                descClass="team-desc"
-                                backgroundColor={customBackground}
-                                imageClass={customImageClass}
-                            />
-                        </div>
-                        <div
-                            className="team__container-col"
-                            data-aos={animationClass}
-                            data-aos-duration={animationDuration}
-                        >
-                            <Card
-                                animationClass={objectAnimationClass}
-                                data-aos-duration={objectDuration}
-                                image={image4}
-                                heading={heading4}
-                                cardHeadingClass="team-card-name"
-                                containerClass="team__card-container-bg"
-                                desc={desc4}
-                                descClass="team-desc"
-                                backgroundColor={customBackground}
-                                imageClass={customImageClass}
-                            />
+                            <div
+                                className="team__slideshow-slider"
+                                style={{
+                                    transform: `translate3d(${
+                                        -active * 100 * mobileView
+                                    }%, 0, 0)`,
+                                }}
+                            >
+                                {Object.keys(team).map((index) => (
+                                    <div
+                                        className="team__container-col"
+                                        data-aos={animationClass}
+                                        data-aos-duration={animationDuration}
+                                    >
+                                        <Card
+                                            {...team[Number(index)]}
+                                            animationClass={
+                                                objectAnimationClass
+                                            }
+                                            data-aos-duration={objectDuration}
+                                            cardHeadingClass="team-card-name"
+                                            containerClass="team__card-container-bg"
+                                            descClass="team-desc"
+                                            backgroundColor={customBackground}
+                                            imageClass={customImageClass}
+                                        />
+                                    </div>
+                                    // <Card
+                                    //     {...team[Number(index)]}
+                                    //     nameTagClass="secondary-gradient"
+                                    //     classString={`${
+                                    //         active === Number(index)
+                                    //             ? ' active'
+                                    //             : ''
+                                    //     }`}
+                                    // />
+                                ))}
+                            </div>
+                            <div className="team__slideshow-slider-indicator">
+                                {Object.keys(team).map((index) => (
+                                    <span
+                                        className={`team__slideshow-slider-indicator-dots ${
+                                            active === Number(index)
+                                                ? ' active'
+                                                : ''
+                                        }`}
+                                        role="presentation"
+                                        data-quote={index}
+                                        key={index}
+                                        onClick={() => setActive(Number(index))}
+                                    />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

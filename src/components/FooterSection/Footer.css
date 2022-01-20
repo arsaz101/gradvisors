@@ -60,6 +60,10 @@
   transition: transform 0.3s ease;
 }
 
+.medium-icon {
+  transform: scale(0.9);
+}
+
 .footer__links {
   display: flex;
   flex-direction: row;
@@ -101,6 +105,10 @@
   font-size: 12px;
 }
 
+.footer__copyright:hover {
+  color: #000 !important;
+}
+
 @media screen and (max-width: 991px) {
   .footer__links {
     flex-direction: column;
@@ -108,7 +116,7 @@
 
   .footer__container .sec {
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   .footer__quick-links {
@@ -122,7 +130,7 @@
 
   .footer__quick-links li {
     text-align: center;
-    padding: 15px !important;
+    padding: 0 !important;
   }
 
   .footer__copyright {

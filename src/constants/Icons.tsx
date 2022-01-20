@@ -11,6 +11,7 @@ import InstagramIcon from '@material-ui/icons/Instagram'
 import RoomOutlinedIcon from 'images/location.svg'
 import PermPhoneMsgOutlinedIcon from 'images/phone.svg'
 import EmailOutlinedIcon from 'images/email.svg'
+import { ReactComponent as MediumIcon } from 'images/medium.svg'
 import CheckOutlinedIcon from '@material-ui/icons/CheckOutlined'
 import VerticalAlignCenterIcon from '@material-ui/icons/VerticalAlignCenter'
 import CircleIcon from '@material-ui/icons/AddCircle'
@@ -68,4 +69,8 @@ export const verticalAlignCenterIcon = (styleClass?: string) => (
 
 export const circleIcon = (styleClass?: string) => (
     <CircleIcon className={styleClass} />
+)
+
+export const mediumIcon = (styleClass?: string) => (
+    <MediumIcon className={`${styleClass} MuiSvgIcon-root`} />
 )

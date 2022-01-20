@@ -4,6 +4,7 @@ import {
     facebookIcon,
     linkedInIcon,
     instagramIcon,
+    mediumIcon,
 } from 'constants/Icons'
 import './Footer.css'
 import { Link } from 'react-router-dom'
@@ -17,6 +18,7 @@ type Props = {
         facebook?: string
         linkedin?: string
         instagram?: string
+        medium?: string
     }
     quickLinks?: {
         link: string
@@ -43,29 +45,61 @@ const Footer = ({
                             <ul className="sci">
                                 {about?.twitter && (
                                     <li>
-                                        <Link to={about?.twitter}>
+                                        <Link
+                                            to={{
+                                                pathname: about?.twitter,
+                                            }}
+                                            target="_blank"
+                                        >
                                             {twitterIcon()}
                                         </Link>
                                     </li>
                                 )}
                                 {about?.facebook && (
                                     <li>
-                                        <Link to={about?.facebook}>
+                                        <Link
+                                            to={{
+                                                pathname: about?.facebook,
+                                            }}
+                                            target="_blank"
+                                        >
                                             {facebookIcon()}
                                         </Link>
                                     </li>
                                 )}
                                 {about?.linkedin && (
                                     <li>
-                                        <Link to={about?.linkedin}>
+                                        <Link
+                                            to={{
+                                                pathname: about?.linkedin,
+                                            }}
+                                            target="_blank"
+                                        >
                                             {linkedInIcon()}
                                         </Link>
                                     </li>
                                 )}
                                 {about?.instagram && (
                                     <li>
-                                        <Link to={about?.instagram}>
+                                        <Link
+                                            to={{
+                                                pathname: about?.instagram,
+                                            }}
+                                            target="_blank"
+                                        >
                                             {instagramIcon()}
+                                        </Link>
+                                    </li>
+                                )}
+                                {about?.medium && (
+                                    <li>
+                                        <Link
+                                            to={{
+                                                pathname: about?.medium,
+                                            }}
+                                            target="_blank"
+                                        >
+                                            {mediumIcon('medium-icon')}
                                         </Link>
                                     </li>
                                 )}
@@ -86,7 +120,13 @@ const Footer = ({
                                                 <h4>{linkElem.name}</h4>
                                             ) : (
                                                 <li>
-                                                    <Link to={linkElem.link}>
+                                                    <Link
+                                                        to={{
+                                                            pathname:
+                                                                linkElem.link,
+                                                        }}
+                                                        target="_blank"
+                                                    >
                                                         {linkElem.name}
                                                     </Link>
                                                 </li>
@@ -99,7 +139,7 @@ const Footer = ({
                 </div>
             </div>
             <div className="footer__copyright primary-gradient">
-                <p>Copyright © 2021 Algotrix. All rights Reserved</p>
+                <p>©️ 2021 Gradvisors Pvt. ltd | Site by Algotrix</p>
             </div>
         </div>
     )
