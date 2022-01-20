@@ -49,7 +49,11 @@ const Testimonial = ({
     }, [active, quotes?.length])
 
     return (
-        <div className="testimonial__section" data-aos={animationClass}>
+        <div
+            className="testimonial__section"
+            data-aos={animationClass}
+            id="testimonials"
+        >
             <div className="testimonial__wrapper container-sec">
                 <div className="testimonial__top-level">
                     <div className="testimonial__heading-wrapper">

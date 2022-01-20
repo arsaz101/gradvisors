@@ -38,7 +38,7 @@ const Navbar = () => {
                     <li className="nav-item">
                         <span className="navOverlay">
                             <Link
-                                to="/"
+                                to="#about"
                                 className="nav-links"
                                 onClick={closeMobileMenu}
                             >
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <li className="nav-item">
                         <span className="navOverlay">
                             <Link
-                                to="/services"
+                                to="#services"
                                 className="nav-links"
                                 onClick={closeMobileMenu}
                             >
@@ -60,7 +60,7 @@ const Navbar = () => {
                     <li className="nav-item">
                         <span className="navOverlay">
                             <Link
-                                to="/products"
+                                to="#testimonials"
                                 className="nav-links"
                                 onClick={closeMobileMenu}
                             >
@@ -88,7 +88,11 @@ const Navbar = () => {
                             </Link>
                         ) : (
                             <Link
-                                to="/"
+                                to={{
+                                    pathname:
+                                        'https://studyabroad.gvisors.com/website',
+                                }}
+                                target="_blank"
                                 className="btn-link"
                                 onClick={closeMobileMenu}
                             >

@@ -36,7 +36,7 @@ const About = ({
 }: Props) => {
     const objectDuration = (Number(animationDuration) / 2).toString()
     return (
-        <div className="about__section container-sec">
+        <div className="about__section container-sec" id="about">
             <div className="about__wrapper aboutBg">
                 <div className="about__content-section">
                     <div className="top-line secondary-gradient" />
@@ -89,7 +89,10 @@ const About = ({
                     </div>
                 </div>
             </div>
-            <div className="about__section aboutBg2 static-height">
+            <div
+                className="about__section aboutBg2 static-height"
+                id="services"
+            >
                 <div className="about__detail">
                     <div className="about__wrapper">
                         <div className="about__container about__sec2">
