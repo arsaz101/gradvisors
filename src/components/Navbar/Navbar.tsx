@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import { dehazeIcon, closeIcon } from 'constants/Icons'
 import { Button } from 'components/Button/Button'
 import logo from 'images/logo.svg'
@@ -37,35 +38,38 @@ const Navbar = () => {
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
                         <span className="navOverlay">
-                            <Link
+                            <HashLink
+                                smooth
                                 to="#about"
                                 className="nav-links"
                                 onClick={closeMobileMenu}
                             >
                                 About
-                            </Link>
+                            </HashLink>
                         </span>
                     </li>
                     <li className="nav-item">
                         <span className="navOverlay">
-                            <Link
+                            <HashLink
+                                smooth
                                 to="#services"
                                 className="nav-links"
                                 onClick={closeMobileMenu}
                             >
                                 Services
-                            </Link>
+                            </HashLink>
                         </span>
                     </li>
                     <li className="nav-item">
                         <span className="navOverlay">
-                            <Link
+                            <HashLink
+                                smooth
                                 to="#testimonials"
                                 className="nav-links"
                                 onClick={closeMobileMenu}
                             >
                                 Testimonials
-                            </Link>
+                            </HashLink>
                         </span>
                     </li>
                     <li className="nav-btn">

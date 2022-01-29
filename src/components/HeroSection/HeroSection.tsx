@@ -71,7 +71,12 @@ const HeroSection = ({
                             >
                                 {description}
                             </p>
-                            <Link to="/sign-up">
+                            <Link
+                                to={{
+                                    pathname:
+                                        'https://studyabroad.gvisors.com/website',
+                                }}
+                            >
                                 <Button
                                     buttonSize="btn--wide"
                                     buttonColor="secondary-gradient"
