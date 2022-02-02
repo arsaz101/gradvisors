@@ -57,7 +57,7 @@ const HeroSection = ({
                                     lightText ? 'heading' : 'heading dark'
                                 }
                             >
-                                A{' '}
+                                A
                                 <span className="primary-color">
                                     {highlight}
                                 </span>
