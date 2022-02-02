@@ -226,6 +226,10 @@
   .about__container-col > .card > .card-container {
     height: 580px;
   }
+
+  .bullet-text {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 960px) {

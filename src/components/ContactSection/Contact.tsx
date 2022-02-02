@@ -6,6 +6,7 @@ import {
 import React from 'react'
 import './Contact.css'
 import contactImg from 'images/contact-img.svg'
+import { Link } from 'react-router-dom'
 
 type Props = {
     animationClass?: string
@@ -44,17 +45,40 @@ const Contact = ({ animationClass, animationDelay }: Props) => {
                             >
                                 <div className="contact__email">
                                     {emailOutlinedIcon()}
-                                    <span>hello@gvisors.com</span>
+                                    <Link
+                                        to={{
+                                            pathname: 'hello@gvisors.com',
+                                        }}
+                                        target="_blank"
+                                    >
+                                        <span>hello@gvisors.com</span>
+                                    </Link>
                                 </div>
                                 <div className="contact__location">
                                     {roomOutlinedIcon()}
-                                    <span>
-                                        254/1, Sector G, Phase 5, DHA, Lahore.
-                                    </span>
+                                    <Link
+                                        to={{
+                                            pathname:
+                                                'https://www.google.com/maps/place//data=!4m2!3m1!1s0x3919093e2b762485:0x999442e5dc0736a2?source=g.page.default',
+                                        }}
+                                        target="_blank"
+                                    >
+                                        <span>
+                                            254/1, Sector G, Phase 5, DHA,
+                                            Lahore.
+                                        </span>
+                                    </Link>
                                 </div>
                                 <div className="contact__phone">
                                     {permPhoneMsgOutlinedIcon()}
-                                    <span>+92 (323) 421 9888</span>
+                                    <Link
+                                        to={{
+                                            pathname: '+923234219888',
+                                        }}
+                                        target="_blank"
+                                    >
+                                        <span>+92 (323) 421 9888</span>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -131,70 +131,94 @@ const About = ({
                                                             01
                                                         </span>
                                                         <div className="inside-line primary" />
-                                                        Career & Educational
-                                                        Counselling
+                                                        <div className="bullet-text">
+                                                            Career & Educational
+                                                            Counselling
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
                                                             02
                                                         </span>
                                                         <div className="inside-line primary" />
-                                                        University Application
-                                                        Processing
+                                                        <div className="bullet-text">
+                                                            University
+                                                            Application
+                                                            Processing
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
                                                             03
                                                         </span>
                                                         <div className="inside-line primary" />
-                                                        Curating Essays &
-                                                        Personal Statements
+                                                        <div className="bullet-text">
+                                                            Curating Essays &
+                                                            Personal Statements
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
                                                             04
                                                         </span>
                                                         <div className="inside-line primary" />
-                                                        Drafting CVs & Resumes
+                                                        <div className="bullet-text">
+                                                            Drafting CVs &
+                                                            Resumes
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
                                                             05
                                                         </span>
                                                         <div className="inside-line primary" />
-                                                        Assistance with Letter
-                                                        of Recommendations
+                                                        <div className="bullet-text">
+                                                            Assistance with
+                                                            Letter of
+                                                            Recommendations
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
                                                             06
                                                         </span>
                                                         <div className="inside-line primary" />
-                                                        Scholarship Applications
+                                                        <div className="bullet-text">
+                                                            Scholarship
+                                                            Applications
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
                                                             07
                                                         </span>
                                                         <div className="inside-line primary" />
-                                                        Interview Preparation
+                                                        <div className="bullet-text">
+                                                            Interview
+                                                            Preparation
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
                                                             08
                                                         </span>
                                                         <div className="inside-line primary" />
-                                                        Visa Application
-                                                        Processing
+                                                        <div className="bullet-text">
+                                                            Visa Application
+                                                            Processing
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <span className="primary-color poppinsMedium">
                                                             09
                                                         </span>
                                                         <div className="inside-line primary" />
-                                                        Developing professional
-                                                        linkages through our
-                                                        Alumni Network
+                                                        <div className="bullet-text">
+                                                            Developing
+                                                            professional
+                                                            linkages through our
+                                                            Alumni Network
+                                                        </div>
                                                     </li>
                                                 </ol>
                                             </div>

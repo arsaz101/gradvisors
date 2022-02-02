@@ -130,6 +130,13 @@
   margin: auto 15px auto -10px;
 }
 
+.contact__email > a,
+.contact__location > a,
+.contact__phone > a {
+  text-decoration: none;
+  color: black;
+}
+
 .contact__location > img {
   height: 25px;
   margin: auto 15px auto -10px;
@@ -146,7 +153,7 @@
   }
 
   .contact__card {
-    padding: 3vw !important;
+    padding: 3vw 4vw !important;
   }
 
   .contact__top-info {
@@ -169,6 +176,7 @@
   .contact-detail > div {
     display: flex;
     flex-direction: row;
+    padding: 0 15px 15px 0;
   }
 
   .card-detail-image {
