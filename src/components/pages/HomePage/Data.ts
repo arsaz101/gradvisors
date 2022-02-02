@@ -17,6 +17,9 @@ import client12 from 'images/client12.svg'
 import client13 from 'images/client13.svg'
 import client14 from 'images/client14.svg'
 import client15 from 'images/client15.svg'
+import client16 from 'images/client16.svg'
+import client17 from 'images/client17.svg'
+import client18 from 'images/client18.svg'
 import team1 from 'images/team1.png'
 import team2 from 'images/team2.png'
 import team3 from 'images/team3.png'
@@ -77,7 +80,7 @@ export const clients = {
     logos: [
         [client1, client2, client3, client4, client5, client6],
         [client7, client8, client9, client10, client11, client12],
-        [client13, client14, client15],
+        [client13, client14, client15, client16, client17, client18],
     ],
 }
 

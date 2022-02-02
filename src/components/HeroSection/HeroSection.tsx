@@ -77,6 +77,7 @@ const HeroSection = ({
                                     pathname:
                                         'https://studyabroad.gvisors.com/website',
                                 }}
+                                target="_blank"
                             >
                                 <Button
                                     buttonSize="btn--wide"
