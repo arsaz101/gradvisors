@@ -60,7 +60,7 @@ const Home = () => {
             </div>
 
             <Contact animationClass="fade-up" animationDelay="200" />
-            <Footer {...footer} animationClass="fade-up" animationDelay="200" />
+            <Footer {...footer} />
         </div>
     )
 }

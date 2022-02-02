@@ -11,8 +11,6 @@ import { Link } from 'react-router-dom'
 import logoGradvisor from 'images/footerLogo.svg'
 
 type Props = {
-    animationClass?: string
-    animationDelay?: string
     about?: {
         twitter?: string
         facebook?: string
@@ -26,22 +24,14 @@ type Props = {
     }[][]
 }
 
-const Footer = ({
-    animationClass,
-    animationDelay,
-    about,
-    quickLinks,
-}: Props) => {
+const Footer = ({ about, quickLinks }: Props) => {
     return (
         <div className="footer__section dark">
             <div className="footer__container-wrapper">
                 <div className="footer__container">
                     <img src={logoGradvisor} alt="" />
                     {about && (
-                        <div
-                            className="footer__about-us"
-                            data-aos={animationClass}
-                        >
+                        <div className="footer__about-us">
                             <ul className="sci">
                                 {about?.twitter && (
                                     <li>
@@ -109,11 +99,7 @@ const Footer = ({
                     <div className="footer__links">
                         {quickLinks &&
                             quickLinks.map((links) => (
-                                <div
-                                    className="sec footer__quick-links"
-                                    data-aos={animationClass}
-                                    data-aos-delay={animationDelay}
-                                >
+                                <div className="sec footer__quick-links">
                                     <ul>
                                         {links.map((linkElem, index) =>
                                             !index ? (
@@ -139,7 +125,7 @@ const Footer = ({
                 </div>
             </div>
             <div className="footer__copyright primary-gradient">
-                <p>©️ 2021 Gradvisors Pvt. ltd | Site by Algotrix</p>
+                <p>©️ 2021 Gradvisors Pvt. Ltd | Site by Algotrix</p>
             </div>
         </div>
     )

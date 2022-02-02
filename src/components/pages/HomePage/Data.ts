@@ -25,8 +25,8 @@ import team4 from 'images/team4.png'
 export const heroSection = {
     lightText: true,
     lightTextDesc: true,
-    headline: 'A one-stop solution leading you to your dream university.',
-    highlight: '',
+    headline: 'solution leading you to your dream university.',
+    highlight: ' one-stop ',
     description:
         'Gradvisors®️ is a professional development organisation, providing tailored academic & career counselling solutions to aspiring students.',
     buttonLabel: 'Get Started',
