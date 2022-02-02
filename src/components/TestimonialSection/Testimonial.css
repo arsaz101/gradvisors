@@ -77,6 +77,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-top: 10px;
 }
 
 .testimonial__slideshow-slider-indicator-dots {
@@ -138,6 +139,10 @@
 
   .testimonial-card-client-wrapper {
     width: 80%;
+  }
+
+  .testimonial__slideshow .testimonial__slideshow-slider {
+    padding-bottom: 30px !important;
   }
 
   .testimonial__slideshow-slider > .card > .card-container {

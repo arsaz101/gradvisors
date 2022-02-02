@@ -87,14 +87,14 @@ const Navbar = () => {
                                     buttonColor="secondary-gradient"
                                     buttonSize="btn--medium"
                                 >
-                                    Sign Up
+                                    Get in Touch
                                 </Button>
                             </Link>
                         ) : (
                             <Link
                                 to={{
                                     pathname:
-                                        'https://studyabroad.gvisors.com/website',
+                                        'https://gradvisors.typeform.com/to/UVeQ2D1H',
                                 }}
                                 target="_blank"
                                 className="btn-link"
@@ -104,7 +104,7 @@ const Navbar = () => {
                                     buttonStyle="btn--outline"
                                     buttonSize="btn--mobile"
                                 >
-                                    Sign Up
+                                    Get in Touch
                                 </Button>
                             </Link>
                         )}

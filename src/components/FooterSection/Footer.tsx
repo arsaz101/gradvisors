@@ -5,10 +5,12 @@ import {
     linkedInIcon,
     instagramIcon,
     mediumIcon,
+    backToTop,
 } from 'constants/Icons'
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import logoGradvisor from 'images/footerLogo.svg'
+import { HashLink } from 'react-router-hash-link'
 
 type Props = {
     about?: {
@@ -121,6 +123,11 @@ const Footer = ({ about, quickLinks }: Props) => {
                                     </ul>
                                 </div>
                             ))}
+                    </div>
+                    <div className="backToTop">
+                        <HashLink smooth to="#hero">
+                            {backToTop()}
+                        </HashLink>
                     </div>
                 </div>
             </div>

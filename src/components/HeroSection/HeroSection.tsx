@@ -35,6 +35,7 @@ const HeroSection = ({
 }: Props) => {
     return (
         <div
+            id="hero"
             className="home__hero-section"
             data-aos={animationClass}
             data-aos-duration={animationDuration}
@@ -75,7 +76,7 @@ const HeroSection = ({
                             <Link
                                 to={{
                                     pathname:
-                                        'https://studyabroad.gvisors.com/website',
+                                        'https://gradvisors.typeform.com/to/UVeQ2D1H',
                                 }}
                                 target="_blank"
                             >

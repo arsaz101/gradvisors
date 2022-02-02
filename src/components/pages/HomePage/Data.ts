@@ -192,7 +192,7 @@ export const footer = {
                 name: 'Join Us',
             },
             {
-                link: 'https://octopus.do/zukxfmmiaia',
+                link: 'https://education.gvisors.com/b2b',
                 name: 'B2B Partners',
             },
         ],

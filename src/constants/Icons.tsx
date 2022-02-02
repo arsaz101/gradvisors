@@ -15,6 +15,7 @@ import { ReactComponent as MediumIcon } from 'images/medium.svg'
 import CheckOutlinedIcon from '@material-ui/icons/CheckOutlined'
 import VerticalAlignCenterIcon from '@material-ui/icons/VerticalAlignCenter'
 import CircleIcon from '@material-ui/icons/AddCircle'
+import BackToTop from 'images/backToTop.svg'
 
 export const closeIcon = (styleClass?: string) => (
     <CloseIcon className={styleClass} />
@@ -73,4 +74,8 @@ export const circleIcon = (styleClass?: string) => (
 
 export const mediumIcon = (styleClass?: string) => (
     <MediumIcon className={`${styleClass} MuiSvgIcon-root`} />
+)
+
+export const backToTop = (styleClass?: string) => (
+    <img src={BackToTop} alt="" className={styleClass} />
 )

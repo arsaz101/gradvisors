@@ -90,20 +90,12 @@
 }
 
 .heading-bg h2 {
-  background-image:
-    linear-gradient(
-      90deg,
-      var(--secondary-light) 0%,
-      var(--secondary) 100%
-    );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: linear-gradient(90deg, var(--secondary-light) 0%, var(--secondary) 100%);
+  color: var(--secondary) !important;
   font-size: 36px !important;
 }
 
 .spacer {
-  height: 150px;
+  height: 180px;
 }
 
 .transparent-fill {
@@ -230,6 +222,10 @@
   .static-height {
     height: auto;
   }
+
+  .about__container-col > .card > .card-container {
+    height: 580px;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -245,6 +241,7 @@
     margin: 0 0;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
   }
 
   .about__container-col {

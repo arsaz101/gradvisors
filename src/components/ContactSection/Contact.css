@@ -146,7 +146,7 @@
   }
 
   .contact__card {
-    padding: 3rem 3vw;
+    padding: 3vw !important;
   }
 
   .contact__top-info {

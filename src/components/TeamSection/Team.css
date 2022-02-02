@@ -104,6 +104,12 @@
   transition: all 0.6s ease-in-out;
 }
 
+@media screen and (max-width: 1200px) {
+  .team__card-bg {
+    height: 480px;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .team__container {
     display: flex;
@@ -117,6 +123,7 @@
     margin: 0 0;
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
 
     /* align-items: center; */
   }
