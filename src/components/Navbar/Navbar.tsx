@@ -20,6 +20,14 @@ const Navbar = () => {
         showButton()
     }, [])
 
+    useEffect(() => {
+        if (click) {
+            window.document.body.classList.add('scrollNone')
+        } else {
+            window.document.body.classList.remove('scrollNone')
+        }
+    }, [click])
+
     window.addEventListener('resize', showButton)
 
     return (

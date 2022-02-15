@@ -31,7 +31,11 @@
 }
 
 .fadeIn {
-  animation: fadeIn ease-in 1s forwards;
+  animation: fadeIn ease-in 0.5s forwards;
+}
+
+.scrollNone {
+  overflow: hidden;
 }
 
 @keyframes fadeIn {
