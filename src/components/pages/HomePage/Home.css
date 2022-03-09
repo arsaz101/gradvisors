@@ -9,6 +9,8 @@
   background-size: contain;
   background-position: center;
   background-position-y: 652px;
+  max-width: 2000px;
+  margin: auto;
 }
 
 .combinedBg2 {
@@ -17,6 +19,8 @@
   background-size: 115vw;
   background-position: center;
   background-position-y: 77vh;
+  max-width: 2000px;
+  margin: auto;
 }
 
 .fillBg {
@@ -95,6 +99,11 @@
   }
 }
 
+@media screen  and (min-width: 961px) {
+  .combinedBg {
+    background-position-y: bottom;
+  }
+}
 @media screen and (max-width: 960px) {
   .combinedBg {
     background-image: none;

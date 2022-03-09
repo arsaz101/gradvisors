@@ -4,6 +4,7 @@ import React from 'react'
 import './About.css'
 
 type Props = {
+    customClass?: string
     animationClass?: string
     objectAnimationClass?: string
     animationDuration?: string
@@ -20,6 +21,7 @@ type Props = {
 }
 
 const About = ({
+    customClass,
     animationClass,
     objectAnimationClass,
     animationDuration,
@@ -36,7 +38,10 @@ const About = ({
 }: Props) => {
     const objectDuration = (Number(animationDuration) / 2).toString()
     return (
-        <div className="about__section container-sec" id="about">
+        <div
+            className={`about__section container-sec ${customClass}`}
+            id="about"
+        >
             <div className="about__wrapper aboutBg">
                 <div className="about__content-section">
                     <div className="top-line secondary-gradient" />

@@ -79,6 +79,10 @@
   width: 100%;
   position: absolute;
   z-index: -1;
+  max-width: 2000px;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 .home__hero-subtitle {
