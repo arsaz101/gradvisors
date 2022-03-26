@@ -118,7 +118,7 @@ export const testimonials = {
         },
         {
             client: 'M. Danish Khan (University of Essex)',
-            quote: 'I started searching for good career advisors back in 2020 and was never satisfied by their process. With Gradvisors, I got one-on-one customised experience, and Ali and Zoraiz helped me improvise my program selection and suggest better and intriguing degrees. The whole process was smooth; I always got my questions answered. They handled all the applications and coordinated the updates on time, which I did not find in other advisors. They guided me every step of the way and, even to this day, being a part of their Alumni Network, are always there whenever I require guidance. I would recommend Gradvisors 10/10 to everyone who wants to study abroad. Also, they’re very fun and chill to be around :p',
+            quote: 'I started searching for good career advisors back in 2020 and was never satisfied by their process. With Gradvisors, I got one-on-one customised experience, and Ali and Zoraiz helped me improvise my program selection and suggest better and intriguing degrees. The whole process was smooth; I always got my questions answered. They handled all the applications and coordinated the updates on time, which I did not find in other advisors. They guided me every step of the way and, even to this day, being a part of their Alumni Network, are always there whenever I require guidance. I would recommend Gradvisors 10/10 to everyone who wants to study abroad.',
         },
     ],
 }
@@ -181,9 +181,14 @@ export const footer = {
                 link: 'https://gradvisors.slite.com/api/s/note/RALbjg8E7L63MNPMLBN5E9/Intellectual-Property',
                 name: 'Intellectual Property',
             },
+
             {
                 link: 'https://gradvisors.slite.com/api/s/note/LGXc754dapuhYs6XSPmEYt/Privacy-Policy',
                 name: 'Privacy Policy',
+            },
+            {
+                link: 'https://studyabroad.gvisors.com/mediakit',
+                name: 'Media Kit',
             },
             {
                 link: 'https://octopus.do/zukxfmmiaia',

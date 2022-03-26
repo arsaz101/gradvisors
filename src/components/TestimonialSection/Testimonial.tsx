@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { TestimonialCard as Card } from 'components/Card/Card'
 import './Testimonial.css'
+import Slider from 'components/Slider'
 
 type Props = {
     animationClass?: string
@@ -14,8 +15,6 @@ type Props = {
     }[]
 }
 
-const delay = 45000
-
 const Testimonial = ({
     animationClass,
     objectAnimationClass,
@@ -24,29 +23,26 @@ const Testimonial = ({
     preHeading,
     quotes,
 }: Props) => {
-    const [active, setActive] = useState(0)
-    const timeoutRef = React.useRef({})
-
-    const resetTimeout = () => {
-        if (timeoutRef.current) {
-            clearTimeout(Number(timeoutRef.current))
-        }
-    }
+    const [mobileView, setMobileView] = useState(0)
 
     React.useEffect(() => {
-        resetTimeout()
-        timeoutRef.current = setTimeout(
-            () =>
-                setActive((prevIndex) =>
-                    prevIndex === quotes?.length - 1 ? 0 : prevIndex + 1
-                ),
-            delay
-        )
+        setMobileView(window.innerWidth < 961 ? 1 : 2)
+        console.log(mobileView)
+    }, [])
 
-        return () => {
-            resetTimeout()
-        }
-    }, [active, quotes?.length])
+    React.useEffect(() => {
+        setMobileView(window.innerWidth < 961 ? 1 : 2)
+        console.log(mobileView)
+    }, [window.innerWidth])
+
+    const testimonials = Object.keys(quotes).map((index) => (
+        <div className="testimonial-bottom-padding">
+            <Card
+                {...quotes[Number(index)]}
+                nameTagClass="secondary-gradient"
+            />
+        </div>
+    ))
 
     return (
         <div
@@ -74,7 +70,11 @@ const Testimonial = ({
                             data-aos={objectAnimationClass}
                             data-aos-delay={animationDelay}
                         >
-                            <div
+                            <Slider
+                                slides={testimonials}
+                                slidesPerView={mobileView}
+                            />
+                            {/* <div
                                 className="testimonial__slideshow-slider"
                                 style={{
                                     transform: `translate3d(${
@@ -108,7 +108,7 @@ const Testimonial = ({
                                         onClick={() => setActive(Number(index))}
                                     />
                                 ))}
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

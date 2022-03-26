@@ -93,7 +93,7 @@
 }
 
 .menu-icon > .MuiSvgIcon-root {
-  color: var(--secondary);
+  color: var(--secondary-light);
 }
 
 .menu-icon > .MuiSvgIcon-root:hover {

@@ -23,11 +23,7 @@ const Contact = ({ animationClass, animationDelay }: Props) => {
                 </div> */}
 
                 <div className="contact__card">
-                    <div
-                        className="contact__row card-detail"
-                        data-aos={animationClass}
-                        data-aos-delay={animationDelay}
-                    >
+                    <div className="contact__row card-detail">
                         <div className="card-info">
                             <div className="contact__top-info">
                                 <div className="top-line secondary-gradient" />
@@ -38,11 +34,7 @@ const Contact = ({ animationClass, animationDelay }: Props) => {
                                 Feel free to reach out to our exceptional team
                                 of experts and discuss your future goals.
                             </p>
-                            <div
-                                className="contact__row contact-detail"
-                                data-aos={animationClass}
-                                data-aos-delay={animationDelay}
-                            >
+                            <div className="contact__row contact-detail">
                                 <div className="contact__email">
                                     {emailOutlinedIcon()}
                                     <Link

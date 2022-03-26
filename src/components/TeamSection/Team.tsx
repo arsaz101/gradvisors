@@ -50,10 +50,10 @@ const Team = ({
     //     }
     // }, [active, team?.length])
 
-    // React.useEffect(() => {
-    //     setMobileView(window.innerWidth < 961 ? 1 : 0)
-    //     console.log(mobileView)
-    // }, [])
+    React.useEffect(() => {
+        setMobileView(window.innerWidth < 961 ? 1 : 4)
+        console.log(mobileView)
+    }, [])
 
     React.useEffect(() => {
         setMobileView(window.innerWidth < 961 ? 1 : 4)
