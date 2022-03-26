@@ -27,7 +27,7 @@ const Team = ({
 
     // const [active, setActive] = useState(0)
     // const timeoutRef = React.useRef({})
-    // const [mobileView, setMobileView] = useState(0)
+    const [mobileView, setMobileView] = useState(0)
 
     // const resetTimeout = () => {
     //     if (timeoutRef.current) {
@@ -55,10 +55,10 @@ const Team = ({
     //     console.log(mobileView)
     // }, [])
 
-    // React.useEffect(() => {
-    //     setMobileView(window.innerWidth < 961 ? 1 : 0)
-    //     console.log(mobileView)
-    // }, [window.innerWidth])
+    React.useEffect(() => {
+        setMobileView(window.innerWidth < 961 ? 1 : 4)
+        console.log(mobileView)
+    }, [window.innerWidth])
 
     const teamSlides = Object.keys(team).map((index) => (
         <div
@@ -106,7 +106,10 @@ const Team = ({
                                 className="team__slideshow"
                                 // data-aos={objectAnimationClass}
                             >
-                                <Slider slides={teamSlides} slidesPerView={4} />
+                                <Slider
+                                    slides={teamSlides}
+                                    slidesPerView={mobileView}
+                                />
                             </div>
                         </div>
                     </div>

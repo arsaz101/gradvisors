@@ -112,7 +112,7 @@
 
 @media screen and (max-width: 960px) {
   .team__container {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -121,7 +121,7 @@
 
   .team__wrapper {
     margin: 0 0;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     padding-bottom: 30px;
 
@@ -139,7 +139,7 @@
   }
 
   .team__container-col {
-    flex: 0 0 49%;
+    /* flex: 0 0 49%; */
   }
 
   .team__container-row {
@@ -147,7 +147,7 @@
   }
 
   .team__slideshow {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: unset;
