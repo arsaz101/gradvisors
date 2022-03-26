@@ -14,7 +14,7 @@ type Props = {
     }[]
 }
 
-const delay = 20000
+const delay = 45000
 
 const Testimonial = ({
     animationClass,

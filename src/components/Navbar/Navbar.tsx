@@ -85,7 +85,7 @@ const Navbar = () => {
                             <Link
                                 to={{
                                     pathname:
-                                        'https://studyabroad.gvisors.com/website',
+                                        'https://studyabroad.gvisors.com/informationform',
                                 }}
                                 target="_blank"
                                 className="btn-link"
@@ -102,7 +102,7 @@ const Navbar = () => {
                             <Link
                                 to={{
                                     pathname:
-                                        'https://gradvisors.typeform.com/to/UVeQ2D1H',
+                                        'https://studyabroad.gvisors.com/informationform',
                                 }}
                                 target="_blank"
                                 className="btn-link"

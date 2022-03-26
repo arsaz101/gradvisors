@@ -76,7 +76,7 @@ const HeroSection = ({
                             <Link
                                 to={{
                                     pathname:
-                                        'https://gradvisors.typeform.com/to/UVeQ2D1H',
+                                        'https://studyabroad.gvisors.com/informationform',
                                 }}
                                 target="_blank"
                             >

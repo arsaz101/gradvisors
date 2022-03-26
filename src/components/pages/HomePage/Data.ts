@@ -24,6 +24,8 @@ import team1 from 'images/team1.png'
 import team2 from 'images/team2.png'
 import team3 from 'images/team3.png'
 import team4 from 'images/team4.png'
+import team5 from 'images/team5.png'
+import team6 from 'images/team6.png'
 
 export const heroSection = {
     lightText: true,
@@ -59,7 +61,7 @@ export const team = [
     {
         image: team2,
         heading: 'Zoraiz Tauqeer',
-        desc: 'Zoraiz came up with his first business idea at the age of 13. In the decade that followed, he went on to work with numerous tech startups. After graduating from LUMS, Zoraiz worked as a business consultant for companies in the US and Canada, later forming Gradvisors.',
+        desc: 'Zoraiz came up with his first business idea at the age of 13. In the decade that followed, he went on to work with numerous tech startups. Zoraiz worked as a business consultant for companies in the US and Canada, later forming Gradvisors.',
     },
     {
         image: team3,
@@ -70,6 +72,16 @@ export const team = [
         image: team4,
         heading: 'Hamna Azam',
         desc: 'Hamna Azam is a LUMS graduate from the batch of 2021. Her background in Humanities and Social Sciences allows her to grasp and understand problems faced by students on a regular basis. As a Community Manager at Gradvisors, Hamna is responsible for connecting students with experts who can guide them.',
+    },
+    {
+        image: team5,
+        heading: 'Abdul Khaliq',
+        desc: 'Abdul Khaliq is a graduate from the Lahore School of Economics. As a Business Development Executive at Gradvisors, his responsibilities include student relationship management, as well as assisting the marketing team with managing social media and virtual student communities.',
+    },
+    {
+        image: team6,
+        heading: 'Minahil Raza',
+        desc: 'Minahil Raza is an aspiring ACCA qualified student and a vital member of the Gradvisors team. At Gradvisors, Minahil provides support with regards to curating written components of the university applications, critical to the success of our students.',
     },
 ]
 
