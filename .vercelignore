@@ -1,0 +1,2 @@
+# Exclude renamed legacy Yarn lockfile
+yarn.lock.ignore
