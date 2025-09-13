@@ -20,10 +20,10 @@ const Clients = ({
     logos,
 }: Props) => {
     const clients = Object.keys(logos).map((index) => (
-        <div className="slider-comp active">
+        <div className="slider-comp active" key={index}>
             <div className="clients__container-col">
                 {logos[Number(index)].map((imgObj, i) => (
-                    <div className="clients__container-col-internal">
+                    <div className="clients__container-col-internal" key={i}>
                         <img src={imgObj} alt="" />
                     </div>
                 ))}

@@ -100,19 +100,16 @@ const Footer = ({ about, quickLinks }: Props) => {
                     )}
                     <div className="footer__links">
                         {quickLinks &&
-                            quickLinks.map((links) => (
-                                <div className="sec footer__quick-links">
+                            quickLinks.map((links, outerIdx) => (
+                                <div className="sec footer__quick-links" key={outerIdx}>
                                     <ul>
                                         {links.map((linkElem, index) =>
                                             !index ? (
-                                                <h4>{linkElem.name}</h4>
+                                                <h4 key={index}>{linkElem.name}</h4>
                                             ) : (
-                                                <li>
+                                                <li key={index}>
                                                     <Link
-                                                        to={{
-                                                            pathname:
-                                                                linkElem.link,
-                                                        }}
+                                                        to={{ pathname: linkElem.link }}
                                                         target="_blank"
                                                     >
                                                         {linkElem.name}

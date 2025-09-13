@@ -2,15 +2,13 @@
 import React from 'react'
 
 // eslint-disable-next-line import/no-unresolved
-import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 
-// Import Swiper styles
-// eslint-disable-next-line import/no-unresolved
-// import 'swiper/css'
-import 'swiper/swiper.scss' // core Swiper
-import 'swiper/modules/navigation/navigation.scss' // Navigation module
-import 'swiper/modules/pagination/pagination.scss' // Pagination module
+// Import Swiper styles (Vite-friendly paths)
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 type Props = {
     slides?: JSX.Element[]
@@ -29,8 +27,8 @@ export const Slider = ({ slides = [], slidesPerView = 1 }: Props) => {
             autoplay
             onSlideChange={() => console.log('slide change')}
         >
-            {slides.map((slide: JSX.Element) => (
-                <SwiperSlide>{slide}</SwiperSlide>
+            {slides.map((slide: JSX.Element, idx: number) => (
+                <SwiperSlide key={idx}>{slide}</SwiperSlide>
             ))}
         </Swiper>
     )
