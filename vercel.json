@@ -9,6 +9,8 @@
     ],
     "framework": null,
     "outputDirectory": "dist",
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
     "routes": [
         { "handle": "filesystem" },
         { "src": "/.*", "dest": "/index.html" }
