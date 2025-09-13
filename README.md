@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+# Gradvisors Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Migrated from Create React App (CRA) to [Vite](https://vitejs.dev/) for faster development, simpler configuration, and Node 22 compatibility (original CRA build failed with OpenSSL errors under Node 22).
 
-## Available Scripts
+## Scripts
 
-In the project directory, you can run:
+Development server (with HMR):
 
-### `npm start`
+```
+npm run dev
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Production build (outputs to `dist/`):
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+npm run build
+```
 
-### `npm test`
+Preview local production build:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm run preview
+```
 
-### `npm run build`
+## Key Migration Changes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Removed `react-scripts`; replaced with Vite + `@vitejs/plugin-react`.
+- Added `vite-plugin-svgr` for flexible SVG importing.
+- Replaced CRA `public/index.html` usage with Vite root `index.html` (old CRA template retained but unused).
+- Introduced query-based SVG import strategy:
+	- `import Icon from './icon.svg?react'` -> React component
+	- `import iconUrl from './icon.svg?url'` -> URL string for `<img>` / CSS
+- Added `DevErrorBoundary` to surface runtime errors instead of blank page.
+- Pruned unused CRA test tooling (Jest / Testing Library) for leaner dependency graph.
+- Upgraded `@types/node` to satisfy Vite peer dependency (>=18).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment (Vercel)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Static export served from `dist/` after `npm run build`.
+- `vercel.json` specifies `installCommand` and `buildCommand` to enforce npm.
+- Legacy `yarn.lock` removed (renamed to `yarn.lock.ignore` and excluded via `.vercelignore`) so Vercel selects npm (uses `package-lock.json`).
+- SPA fallback configured so non-root routes resolve to `index.html`.
 
-### `npm run eject`
+## SVG Usage Reference
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Type declarations in `custom.d.ts` enable importing the following variants:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Pattern | Result |
+|---------|--------|
+| `file.svg` | URL (default Vite asset behavior) |
+| `file.svg?url` | Explicit URL string |
+| `file.svg?react` | React component via SVGR |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Tech Stack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- React 17
+- TypeScript 4
+- Vite 5
+- Material-UI v4
+- Swiper 7
+- AOS (scroll animations)
+- SCSS modules / global styles
 
-## Learn More
+## Local Development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Install dependencies: `npm install`
+2. Start dev server: `npm run dev` (default: http://localhost:5173)
+3. Build production: `npm run build`
+4. Preview build: `npm run preview`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Notes
+
+- Keep `yarn.lock` absent to avoid accidental Yarn installs in CI/CD.
+- When adding new SVGs decide early whether they should be components (`?react`) or plain assets (`?url`).
+- If upgrading to React 18, switch to `createRoot` in `src/index.tsx`.
+
+## License
+
+Internal project – no public license specified.
