@@ -129,7 +129,7 @@ const Footer = ({ about, quickLinks }: Props) => {
                 </div>
             </div>
             <div className="footer__copyright primary-gradient">
-                <p>©️ 2021 Gradvisors Pvt. Ltd | Site by Algotrix</p>
+                <p>©️ 2019 Gradvisors<sup>™</sup></p>
             </div>
         </div>
     )

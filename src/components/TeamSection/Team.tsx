@@ -98,7 +98,7 @@ const Team = ({
                     <div className="top-line secondary-gradient" />
                     <div className="stage">Brains behind the operation</div>
                     <h2 className="team__heading" data-aos={animationClass}>
-                        Meet our Team
+                        Meet our founders
                     </h2>
                     <div className="team__container">
                         <div className="team__container-row">

@@ -56,8 +56,7 @@ const Contact = ({ animationClass, animationDelay }: Props) => {
                                         target="_blank"
                                     >
                                         <span>
-                                            254/1, Sector G, Phase 5, DHA,
-                                            Lahore.
+                                            4th Floor, 12, CCA Sector C Phase 5 D.H.A, Lahore.
                                         </span>
                                     </Link>
                                 </div>

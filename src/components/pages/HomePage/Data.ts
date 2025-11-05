@@ -30,11 +30,11 @@ import team6 from 'images/team6.png'
 export const heroSection = {
     lightText: true,
     lightTextDesc: true,
-    headline: 'solution leading you to your dream university.',
+    headline: 'platform guiding you toward your dream university.',
     highlight: ' one-stop ',
     description:
-        'Gradvisors®️ is a professional development organisation, providing tailored academic & career counselling solutions to aspiring students.',
-    buttonLabel: 'Get Started',
+        'Gradvisors™ is Pakistan’s 1st professional development organisation, offering tailored academic and career counselling to help students secure university admissions abroad and navigate Canadian immigration with confidence.',
+    buttonLabel: 'Book a session',
     imgStart: '',
     img: heroImg,
     alt: 'Academics',
@@ -56,38 +56,23 @@ export const team = [
     {
         image: team1,
         heading: 'Ali Aanish',
-        desc: 'Ali is the Founder and Chief Executive Officer of Gradvisors. His commendable journey to success is filled with examples of perseverance, commitment, and hard work. He’s well-versed in educational counselling, with hands-on experience in undergraduate and postgraduate admissions.',
+        desc: 'As Founder and Chief Executive Officer, he drives Gradvisors’ vision, strategy, and growth. From inception, he built the company’s systems, partnerships, and operations with a hands-on, results-driven approach. His insight into global education has positioned Gradvisors among the most trusted international education consultancies.',
     },
     {
         image: team2,
-        heading: 'Zoraiz Tauqeer',
-        desc: 'Zoraiz came up with his first business idea at the age of 13. In the decade that followed, he went on to work with numerous tech startups. Zoraiz worked as a business consultant for companies in the US and Canada, later forming Gradvisors.',
+        heading: 'Irfan Junejo',
+        desc: 'As Co-Founder and Chief Marketing Officer, he leads Gradvisors’ brand and digital storytelling. Through creative direction and authentic communication, he connects with students and strengthens the trust that defines Gradvisors’ identity.',
     },
     {
         image: team3,
-        heading: 'Misha Shahid',
-        desc: "Misha Shahid is a University of London Alumnus who recently graduated with a Master's degree in management from the University of Westminster. At Gradvisors, Misha develops and conducts courses to assist students with the preparation of tests such as IELTS; she is also a creative writing coach and a volunteer teacher trainer.",
-    },
-    {
-        image: team4,
-        heading: 'Hamna Azam',
-        desc: 'Hamna Azam is a LUMS graduate from the batch of 2021. Her background in Humanities and Social Sciences allows her to grasp and understand problems faced by students on a regular basis. As a Community Manager at Gradvisors, Hamna is responsible for connecting students with experts who can guide them.',
-    },
-    {
-        image: team5,
-        heading: 'Abdul Khaliq',
-        desc: 'Abdul Khaliq is a graduate from the Lahore School of Economics. As a Business Development Executive at Gradvisors, his responsibilities include student relationship management, as well as assisting the marketing team with managing social media and virtual student communities.',
-    },
-    {
-        image: team6,
-        heading: 'Minahil Raza',
-        desc: 'Minahil Raza is an aspiring ACCA qualified student and a vital member of the Gradvisors team. At Gradvisors, Minahil provides support with regards to curating written components of the university applications, critical to the success of our students.',
+        heading: 'Nabeera Ali Naqvi',
+        desc: 'As Co-Founder and Chief Operating Officer, she oversees operations to ensure every student receives expert guidance from application to visa. She leads the consulting teams, sets quality standards, and continually refines Gradvisors’ student-success framework.',
     },
 ]
 
 export const clients = {
     heading:
-        'Our students have received acceptances from universities all over the globe',
+        'Our students are shaping their futures at leading universities worldwide.',
     preHeading: 'Our Global Alumni Network',
     logos: [
         [client1, client2, client3, client4, client5, client6],

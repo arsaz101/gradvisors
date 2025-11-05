@@ -85,7 +85,7 @@ const Navbar = () => {
                             <Link
                                 to={{
                                     pathname:
-                                        'https://studyabroad.gvisors.com/informationform',
+                                        'https://www.instagram.com/gvisors/',
                                 }}
                                 target="_blank"
                                 className="btn-link"
@@ -95,14 +95,14 @@ const Navbar = () => {
                                     buttonColor="secondary-gradient"
                                     buttonSize="btn--medium"
                                 >
-                                    Get in Touch
+                                    Get in touch
                                 </Button>
                             </Link>
                         ) : (
                             <Link
                                 to={{
                                     pathname:
-                                        'https://studyabroad.gvisors.com/informationform',
+                                        'https://www.instagram.com/gvisors/',
                                 }}
                                 target="_blank"
                                 className="btn-link"
@@ -112,7 +112,7 @@ const Navbar = () => {
                                     buttonStyle="btn--outline"
                                     buttonSize="btn--mobile"
                                 >
-                                    Get in Touch
+                                    Get in touch
                                 </Button>
                             </Link>
                         )}
