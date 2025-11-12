@@ -91,7 +91,7 @@ export const testimonials = {
         },
         {
             client: 'Tallal Ahmed Bhatti (Sheffield Hallam University)',
-            quote: 'So it was a few months back, around March 2021, when I first got to know about Gradvisors through Instagram when I had decided to pursue a postgraduate degree. After connecting with Ali and Zoraiz, I felt confident in choosing their services. I was honest to them about my needs and plans, and they figured everything out for me just the way I wanted. I would recommend trusting them with your future plans as they help you through each and every stage and even after you’ve reached the university. I had a great journey with Gradvisors and would definitely recommend Ali and Zoraiz for their amazing services.',
+            quote: "So it was a few months back, around March 2021, when I first got to know about Gradvisors through Instagram when I had decided to pursue a postgraduate degree. After connecting with Ali, I felt confident in choosing Gradvisors' services. I was honest to them about my needs and plans, and they figured everything out for me just the way I wanted. I would recommend trusting them with your future plans as they help you through each and every stage and even after you’ve reached the university. I had a great journey with Gradvisors and would definitely recommend Ali for his amazing services.",
         },
         {
             client: 'Faizan Bhagat (University of Exeter)',
@@ -99,11 +99,11 @@ export const testimonials = {
         },
         {
             client: 'Haider Ilahi (University of Rochester)',
-            quote: 'I decided to use Gradvisors’ university counselling services around February of 2021. After being in the workforce for a year, I realized it was time for a change and pursued a post-graduate degree. Their commitment to their work can be gauged from the fact that I was accepted. If I had to do the process all over again, I wouldn’t change a thing, and I would recommend their services to anyone looking to pursue a higher education degree abroad. To Ali and Zoraiz - I cannot express my gratitude for all your help, for which I will be forever thankful.',
+            quote: 'I decided to use Gradvisors’ university counselling services around February of 2021. After being in the workforce for a year, I realized it was time for a change and pursued a post-graduate degree. The commitment to their work can be gauged from the fact that I was accepted. If I had to do the process all over again, I wouldn’t change a thing, and I would recommend their services to anyone looking to pursue a higher education degree abroad. To Ali - I cannot express my gratitude for all your help, for which I will be forever thankful.',
         },
         {
             client: 'M. Danish Khan (University of Essex)',
-            quote: 'I started searching for good career advisors back in 2020 and was never satisfied by their process. With Gradvisors, I got one-on-one customised experience, and Ali and Zoraiz helped me improvise my program selection and suggest better and intriguing degrees. The whole process was smooth; I always got my questions answered. They handled all the applications and coordinated the updates on time, which I did not find in other advisors. They guided me every step of the way and, even to this day, being a part of their Alumni Network, are always there whenever I require guidance. I would recommend Gradvisors 10/10 to everyone who wants to study abroad.',
+            quote: 'I started searching for good career advisors back in 2020 and was never satisfied by their process. With Gradvisors, I got one-on-one customised experience, and Ali helped me improvise my program selection and suggest better and intriguing degrees. The whole process was smooth; I always got my questions answered. They handled all the applications and coordinated the updates on time, which I did not find in other advisors. They guided me every step of the way and, even to this day, being a part of their Alumni Network, are always there whenever I require guidance. I would recommend Gradvisors 10/10 to everyone who wants to study abroad.',
         },
     ],
 }
